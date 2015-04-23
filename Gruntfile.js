@@ -3,6 +3,14 @@ module.exports = function(grunt){
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
+		copy: {
+			dist: {
+				src: ['**'],
+				dest: 'dist/js/vendor',
+				expand: true,
+				cwd: 'src/js/vendor/'
+			}
+		},
 		concat:{
 			css: {
 		    	src: ['src/css/base/normalize.css', 'src/css/base/main.css','src/css/base/layout.css', 
@@ -11,8 +19,7 @@ module.exports = function(grunt){
 		    	dest: 'dist/css/concat.css'
 		  	},
 		  	js: {
-		    	src: ['src/js/vendor/modernizr-2.8.3.min.js', 'src/js/vendor/jquery-1.11.2.min.js', 
-		    		  'src/js/plugins.js', 'src/js/main.js'],
+		    	src: ['src/js/plugins.js', 'src/js/main.js'],
 		    	dest: 'dist/js/concat.js'
 		  	}
 		}, 
@@ -27,6 +34,7 @@ module.exports = function(grunt){
 	});
 
 	grunt.loadNpmTasks('grunt-includes');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.registerTask('default', 'concat');
+	grunt.registerTask('default', 'copy', 'concat');
 };
