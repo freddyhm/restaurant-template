@@ -36,5 +36,5 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-includes');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.registerTask('default', 'copy', 'concat');
+	grunt.registerTask('default', ['copy', 'concat', 'includes']);
 };
