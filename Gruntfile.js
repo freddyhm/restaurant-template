@@ -3,18 +3,27 @@ module.exports = function(grunt){
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
+		watch: {
+		  src : {
+		    files: ['src/**/*', 'index.html'],
+		    tasks: ['includereplace', 'concat', 'copy'],
+		    options: {
+		      spawn: false
+		    }
+		  }
+		},
 		copy: {
 			dist: {
-				src: ['**'],
-				dest: 'dist/js/vendor',
+				src: ['js/vendor/**/*.js', 'img/**/*'],
+				dest: 'dist',
 				expand: true,
-				cwd: 'src/js/vendor/'
+				cwd: 'src'
 			}
 		},
 		concat:{
 			css: {
 		    	src: ['src/css/base/normalize.css', 'src/css/base/main.css','src/css/base/layout.css', 
-		    		  'src/css/nav/*.css', 'src/css/social-list/*.css', 'src/css/header/*.css', 
+		    		  'src/css/button/*.css', 'src/css/nav/*.css', 'src/css/social-list/*.css', 'src/css/header/*.css', 
 		    		  'src/css/module/**/*.css', 'src/css/footer/*.css'],
 		    	dest: 'dist/css/concat.css'
 		  	},
@@ -23,18 +32,18 @@ module.exports = function(grunt){
 		    	dest: 'dist/js/concat.js'
 		  	}
 		}, 
-		includes: {
+		includereplace: {
 		  files: {
-		    src: ['index.html'], // Source files
-		    dest: 'dist', // Destination directory
-		    flatten: true,
-		    cwd: '.'
+		    src: 'index.html', // Source files
+		    dest: 'dist/' // Destination directory
 		  }
 		}
 	});
 
-	grunt.loadNpmTasks('grunt-includes');
+	
+	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.registerTask('default', ['copy', 'concat', 'includes']);
+	grunt.loadNpmTasks('grunt-include-replace');
+	grunt.registerTask('default', ['copy', 'concat', 'includereplace', 'watch']);
 };

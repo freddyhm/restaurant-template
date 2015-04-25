@@ -1,0 +1,18 @@
+<nav class="nav__primary">
+	<a class="nav__stack" id="nav-stack">
+	  <svg class="nav__stack__container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	    <path class="nav__stack__icon" d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path>
+	  </svg>
+	</a>
+	<div class="nav__container" id="nav-container">
+		<ul class="nav__list">
+			<li class="nav__item nav__item--selected"><a href="#" class="nav__link">Home</a></li>
+			<li class="nav__item"><a href="#" class="nav__link">About</a></li>
+			<li class="nav__item"><a href="#" class="nav__link">Ingredients</a></li>
+			<li class="nav__item"><a href="#" class="nav__link">Menus</a></li>
+			<li class="nav__item"><a href="#" class="nav__link">Reviews</a></li>
+			<li class="nav__item"><a href="#" class="nav__link">Reservations</a></li>
+		</ul>
+		@@include('social-list.html', {"blockListClass": "header__social-list", "blockItemClass": "nav__item"})
+	</div>
+</nav>

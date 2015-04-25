@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #BUTTON
+\*------------------------------------*/
+
+.button{
+	width: 150px;
+	height: 40px;
+	text-transform: uppercase;
+	line-height: 40px;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.button--light{
+	background-color: #fff;
+	color: #000;
+}
+
+.button--dark{
+	background-color: #000;
+	color: #fff;
+} 

@@ -1,1 +1,13 @@
-HELLLOO
+/*------------------------------------*\
+    #SOCIAL-LIST
+\*------------------------------------*/
+
+.social-list{
+	margin-top: 0;
+	width: 100px;
+	height: 100px;
+}
+
+.social__item{
+	display: inline-block;
+}

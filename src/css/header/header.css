@@ -1,0 +1,90 @@
+/* -----------------------------------------------
+  :: HEADER
+  --------------------------------------------- */
+
+  /* ------------
+  :: Mobile
+  ---------- */
+
+.header{
+	width: 100%;
+	height: 335px;
+	background: url('../img/header/bg.jpg') no-repeat center center;
+	background-size: cover; 
+}
+
+.logo{
+	display: block;
+	margin: 0 auto;
+}
+
+.header__content{
+	margin: 0 auto;
+	width: 350px;
+	text-align: center;
+}
+
+.header__content::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.header__separator{
+	margin: 1.4em auto;
+	display: block;
+
+}
+
+.header__title{
+	font-size: 1.8em;
+	color: #fff;
+}
+
+.header__button:nth-of-type(1){
+	float: left;
+}
+
+.header__button:nth-of-type(2){
+	float: right;
+}
+
+.container__cta{
+	width: 320px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+/* -----------
+  :: Desktop
+  ---------- */
+
+@media screen and (min-width: 800px){
+
+	.header{
+		height: 480px;
+	}
+
+	.header__content{
+		width: 635px;
+	}
+
+	.header__title{
+		font-size: 3em;
+	}
+
+	.logo{
+		padding-left: 9em;
+  		padding-top: 1.5em;
+  		margin: 0;
+	}
+
+	.header__social-list{
+		display: inline;
+		width: 187px;
+	}
+}
+
+
+
+
