@@ -24,7 +24,7 @@ module.exports = function(grunt){
 			css: {
 		    	src: ['src/css/base/normalize.css', 'src/css/base/main.css','src/css/base/layout.css', 
 		    		  'src/css/button/*.css', 'src/css/nav/*.css', 'src/css/social-list/*.css', 'src/css/header/*.css', 
-		    		  'src/css/module/**/*.css', 'src/css/footer/*.css'],
+		    		  'src/css/module/module.css', 'src/css/module/**/*.css', 'src/css/footer/*.css'],
 		    	dest: 'dist/css/concat.css'
 		  	},
 		  	js: {

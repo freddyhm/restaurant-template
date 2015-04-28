@@ -17,11 +17,11 @@
 .module__title{
 	margin: 0;
 	padding: 1.2em 0 0.4em 0;
-	font-family: 'YesevaOne';
+	font-family: 'Yeseva One', cursive;
 }
 
 .module__description{
-	margin-top: 1.4em;
+	margin: 1.4em auto 0 auto;
 }
 
 .module__overlay{

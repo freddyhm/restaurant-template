@@ -2,21 +2,15 @@
   :: ABOUT
   --------------------------------------------- */
 
-.module__about{
+.about__wrapper{
 	background: url("../img/about/about__dish.png") no-repeat center center;
 	background-size: 421px 425px;
-
+	height: inherit;
+	width: 100%;	
 }
 
 .about__content{
 	position: relative;
-}
-
-.about__showcase{
-	display: block;
-  	position: absolute;
-  	top: 0;
-  	z-index: -1;
 }
 
 .about__hero{
@@ -24,4 +18,36 @@
   	margin: 0 auto;
   	padding-left: 59px;
   	padding-top: 28px;
+}
+
+.about__description{
+	max-width: 525px;
+}
+
+@media screen and (min-width: 700px){
+
+	.about__wrapper{
+		background-position: right center;
+		max-width: 778px;
+		margin: 0 auto;
+	}
+
+	.about__overlay{
+		display: none;
+	}
+
+	.about__title{
+		color: #cc9900;
+	}
+
+	.about__description{
+		width: 300px;
+		font-size: 0.8em;
+		color: #585858;
+	}
+
+	.about__content{
+		width: 400px; 
+		float: left;
+	}
 }
