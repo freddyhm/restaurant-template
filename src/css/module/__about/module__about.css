@@ -2,6 +2,10 @@
   :: ABOUT
   --------------------------------------------- */
 
+ /* ------------
+  :: Mobile
+  ---------- */
+
 .about__wrapper{
 	background: url("../img/about/about__dish.png") no-repeat center center;
 	background-size: 421px 425px;
@@ -23,6 +27,10 @@
 .about__description{
 	max-width: 525px;
 }
+
+/* -----------
+  :: Desktop
+  ---------- */
 
 @media screen and (min-width: 700px){
 

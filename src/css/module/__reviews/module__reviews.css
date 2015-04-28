@@ -2,6 +2,10 @@
   :: REVIEWS
   --------------------------------------------- */
 
+/* ------------
+  :: Mobile
+  ---------- */
+
 .reviews__wrapper{
 	position: relative;
 	background: url("../img/reviews/reviews__dish.jpg") no-repeat top right;
@@ -37,6 +41,10 @@
 .quote__source{
 	font-style: normal;
 }
+
+/* -----------
+  :: Desktop
+  ---------- */
 
 @media screen and (min-width: 700px){
 
