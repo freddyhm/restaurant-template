@@ -1,0 +1,79 @@
+/* -----------------------------------------------
+  :: REVIEWS
+  --------------------------------------------- */
+
+.reviews__wrapper{
+	position: relative;
+	background: url("../img/reviews/reviews__dish.jpg") no-repeat top right;
+	background-size: cover;
+	height: inherit;
+	width: 100%;	
+}
+
+.reviews__content{
+	position: relative;
+}
+
+.reviews__single{
+	display: inline-block;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	border: 2px solid #3d3633;
+}
+.reviews__description{
+	max-width: 525px;
+}
+
+.quote{
+	float: left;
+	display: block;
+	position: relative;
+	bottom: 22px;
+	font-family: "Georgia Regular";
+	font-size: 3.5em;
+}
+
+.quote__source{
+	font-style: normal;
+}
+
+@media screen and (min-width: 700px){
+
+	.module__reviews{
+		height: 500px;
+	}
+
+	.reviews__overlay{
+		display: none;
+	}
+
+	.reviews__content{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 490px; 
+		height: 355px;
+		margin: auto;
+		background-color: rgba(0,0,0,0.8);
+	}
+
+	.reviews__title{
+		color: #fff;
+	}
+
+	.reviews__description{
+		width: 300px;
+		font-size: 0.8em;
+	}
+
+	.quote__footer{
+		margin-top: 50px;
+	}	
+
+	.reviews__list{
+		margin-top: 3em;
+	}
+}
