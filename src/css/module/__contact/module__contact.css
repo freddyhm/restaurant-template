@@ -6,6 +6,18 @@
   :: Mobile
   ---------- */
 
+/* Separator for individual info modules - desktop only */
+
+.info__separator{
+	display: none;
+}
+
+/* About module - desktop only */
+
+.info__about{
+	display: none;
+}
+
 .contact__wrapper{
 	background: url("../img/contact/contact__dish.png") no-repeat center center;
 	background-size: 421px 425px;
@@ -23,23 +35,13 @@
 	color: #585858;
 }
 
-.contact__description{
-	max-width: 525px;
-}
+/* Info wrapper & modules */
 
-.info__hours{
-	float:left;
-}
-
-.info__locations{
-	float: right;
-}
-
-.contact__info{
+.contact__info-wrapper{
 	width: 100%;
 }
 
-.contact__info::after{
+.contact__info-wrapper::after{
 	content: "";
 	display: block;
 	clear: both;
@@ -54,23 +56,79 @@
 	font-size: 0.9em;	
 }
 
-.contact__call{
-	margin: 1.5em auto;
-	background-color: #c9a131;
+.info__hours{
+	float:left;
+}
+
+.info__locations{
+	float: right;
 }
 
 .address__link{
 	color: #e7bd49;
 }
 
+.contact__call{
+	margin: 1.5em auto;
+	background-color: #c9a131;
+}
 
 /* -----------
   :: Desktop
   ---------- */
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 830px){
+	
+	/* Hide module title's separator */
+
+	.contact__separator{
+		display: none;
+	}
 
 	.module__contact{
+		background-color: #000;
+		height: 200px;
+	}
+
+	.contact__content{
+		width: 100%;
+		max-width: 800px;
+		margin: 0 auto;
+		color: #fff;
+	}
+	
+	.info__blocks{
+		width: 200px;
+		float: left;
+		margin-right: 4em;
+	}	
+
+	.info__separator{
+		display: inline-block;	
+	}	
+
+	.info__about{
+		display: block;
+	}
+
+	.info__locations{
+		float: left;
+	}
+
+	.info__description{
+		font-size: 0.7em;
+	}
+
+	.address__link{
+		font-weight: 700;
+		color: #585858;
+	}
+
+	.contact__title{
+		display: none;
+	}
+
+	.contact__call{
 		display: none;
 	}
 }
