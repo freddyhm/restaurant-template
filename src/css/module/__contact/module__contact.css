@@ -1,0 +1,46 @@
+/* -----------------------------------------------
+  :: CONTACT
+  --------------------------------------------- */
+
+ /* ------------
+  :: Mobile
+  ---------- */
+
+.contact__wrapper{
+	background: url("../img/contact/contact__dish.png") no-repeat center center;
+	background-size: 421px 425px;
+	height: inherit;
+	width: 100%;	
+}
+
+.contact__title{
+	color: #cc9900;
+}
+
+.contact__content{
+	position: relative;
+	color: #727373;
+}
+
+.contact__description{
+	max-width: 525px;
+}
+
+.hours{
+	float:left;
+}
+
+.location{
+	float: right;
+}
+
+/* -----------
+  :: Desktop
+  ---------- */
+
+@media screen and (min-width: 700px){
+
+	.module__contact{
+		display: none;
+	}
+}
