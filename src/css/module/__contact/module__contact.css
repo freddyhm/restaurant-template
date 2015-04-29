@@ -19,20 +19,50 @@
 
 .contact__content{
 	position: relative;
-	color: #727373;
+	max-width: 360px;
+	color: #585858;
 }
 
 .contact__description{
 	max-width: 525px;
 }
 
-.hours{
+.info__hours{
 	float:left;
 }
 
-.location{
+.info__locations{
 	float: right;
 }
+
+.contact__info{
+	width: 100%;
+}
+
+.contact__info::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.info__title{
+	font-size: 1.2em;
+	margin-bottom: 0;
+}
+
+.info__description{
+	font-size: 0.9em;	
+}
+
+.contact__call{
+	margin: 1.5em auto;
+	background-color: #c9a131;
+}
+
+.address__link{
+	color: #e7bd49;
+}
+
 
 /* -----------
   :: Desktop
