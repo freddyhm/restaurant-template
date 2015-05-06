@@ -9,6 +9,7 @@
 	line-height: 40px;
 	opacity: 0.8;
 	cursor: pointer;
+	color: #fff;
 }
 
 .button--light{
@@ -18,5 +19,13 @@
 
 .button--dark{
 	background-color: #000;
-	color: #fff;
 } 
+
+.button--highlighted{
+	margin: 1.5em auto;
+	background-color: #c9a131;	
+}
+
+.button--wide{
+	width: 100%;
+}

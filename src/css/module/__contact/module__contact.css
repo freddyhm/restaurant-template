@@ -32,7 +32,6 @@
 .contact__content{
 	position: relative;
 	max-width: 360px;
-	color: #585858;
 }
 
 /* Info wrapper & modules */
@@ -66,11 +65,6 @@
 
 .address__link{
 	color: #e7bd49;
-}
-
-.contact__call{
-	margin: 1.5em auto;
-	background-color: #c9a131;
 }
 
 /* -----------
@@ -128,7 +122,7 @@
 		display: none;
 	}
 
-	.contact__call{
+	.contact__button{
 		display: none;
 	}
 }

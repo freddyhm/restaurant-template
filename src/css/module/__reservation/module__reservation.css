@@ -1,0 +1,97 @@
+/* ------------------------------------------
+:: RESERVATION
+--------------------------------------------- */
+
+/* -------
+:: Mobile
+---------- */
+
+.banner{
+	display: none;
+}
+
+.module__reservation{
+	height: 660px;
+}
+
+.reservation__content{
+	max-width: 500px;
+}
+
+.reservation__form{
+	margin: 1.5em auto 0 auto;
+}
+
+.form__field{
+	margin-top: 0.7em;
+}
+
+.field__label{
+	display: block;
+	text-align: left;
+	color: #c9a131;
+}
+
+.field__input{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.8em;
+	border: 1px solid #c8c6c6;
+}
+
+.form__submit-button{
+	width: 100%;
+}
+
+/* -------
+:: Desktop
+---------- */
+
+@media screen and (min-width: 830px){
+
+.banner{
+	display: block;
+	float: left;
+	margin-top: 5em;
+	margin-left: 4em;
+	width: 365px;
+	height: 325px;
+	background-color: red;
+}
+
+.reservation__content{
+	float: right;
+	margin-top: 5em;
+	margin-right: 4em;
+	width: 365px;
+	height: 325px; 
+
+}
+
+.reservation__title{
+	padding-top: 0px;
+}
+
+.form__field{
+	width: 45%;
+}
+
+.field__input{
+	padding: 0.3em;
+}
+
+.form__field:nth-of-type(2n+1){
+	float: left;
+}
+
+.form__field:nth-of-type(2n+2){
+	float: right;
+}
+
+.reservation__button{
+	width: 150px;
+	text-transform: none;
+}
+
+
+}

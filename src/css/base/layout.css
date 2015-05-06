@@ -13,8 +13,7 @@ a{
 	color: inherit;
 }
 
-button{
+button, input{
 	border: none;
 }
-
 
