@@ -1,0 +1,57 @@
+/* ------------------------------------------
+:: MENU
+--------------------------------------------- */
+
+/* -------
+:: Mobile
+---------- */
+
+.module__menu{
+	height: 900px;
+}
+
+.category__dish-list{
+	display: none;
+}
+
+.category__dish--active{
+	display: block;
+}
+
+.dish__title{
+	float: left;
+}
+
+.dish__price{
+	float: right;
+}
+
+.dish__bar{
+	clear:both;
+	border: none;
+	background-color: #cc9900;
+}
+
+.category__header{
+	border: 2px solid #cc9900;
+	margin-top: 11px;
+	margin-bottom: 26px;
+	padding: 10px;
+	background-color: grey;
+
+}
+
+.category__title{
+	padding: 0px;
+}
+
+/* -------
+:: Desktop
+---------- */
+
+@media screen and (min-width: 640px){
+	.category__header{
+		border: none;
+		background-color: transparent;
+	}
+}

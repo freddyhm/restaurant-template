@@ -47,25 +47,38 @@
 :: Desktop
 ---------- */
 
-@media screen and (min-width: 830px){
+@media screen and (min-width: 1000px){
 
 .banner{
 	display: block;
 	float: left;
 	margin-top: 5em;
-	margin-left: 4em;
-	width: 365px;
+	width: 366px;
 	height: 325px;
-	background-color: red;
+}
+
+.banner--left{
+	float: left;
+}
+
+.banner--right{
+	float: right;
+}
+
+.reservation__wrapper{
+	float: right;
+	margin-top: 5em;
+	width: 366px;
+	height: 325px; 
 }
 
 .reservation__content{
-	float: right;
-	margin-top: 5em;
-	margin-right: 4em;
-	width: 365px;
-	height: 325px; 
+	max-width: 795px;
+}
 
+.reservation__content:after{
+	content: "";
+	clear: both;
 }
 
 .reservation__title{
