@@ -7,7 +7,7 @@
 ---------- */
 
 .module__menu{
-	height: 900px;
+	height: 1650px;
 }
 
 .category__dish-list{
@@ -50,8 +50,30 @@
 ---------- */
 
 @media screen and (min-width: 640px){
+
+	.module__menu{
+		height: 960px;
+	}
+
 	.category__header{
 		border: none;
 		background-color: transparent;
+	}
+
+	.menu__category{
+		width: 300px;
+	}
+
+	.menu__category:last-of-type{
+		position: relative;
+		bottom: 83px;
+	}
+
+	.menu__list{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 700px;
+		margin: 0 auto;
 	}
 }
