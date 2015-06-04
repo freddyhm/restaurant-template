@@ -17,3 +17,13 @@ button, input{
 	border: none;
 }
 
+address{
+	font-style: normal;
+}
+
+figure{
+	margin: 0;
+}
+
+
+

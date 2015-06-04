@@ -10,6 +10,10 @@
 	display: none;
 }
 
+.reservation__title{
+	width: 100%;
+}
+
 .module__reservation{
 	height: 660px;
 }
