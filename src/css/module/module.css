@@ -4,7 +4,7 @@
 
 .module{
 	width: 100%;
-	height: 450px;
+	height: 750px;
 }
 
 .module__content{
@@ -39,6 +39,26 @@
 	height: inherit;
 	background-color: black;
 	background-color: rgba(0,0,0,0.5);
+}
+
+.module__separator{ 
+	width: 100%; 
+}
+
+.module__separator--highlighted{
+	max-width: 247px;
+}
+
+.module__separator--light{
+	max-width: 157px;
+}
+
+/* ----------------
+  :: Small mobile
+  ----------------- */
+
+@media screen and (min-width: 334px){
+	.module{ height: 450px; }
 }
 
 
