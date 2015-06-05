@@ -10,12 +10,12 @@
 		</div>
 		<div class="reservation__wrapper">
 			<form class="reservation__form" method="POST" action="#">
-				<legend class="module__title module__title--highlighted reservation__title">Reservations</legend>
-				<img src="img/module/module__separator--highlighted.png" alt="" class="module__separator module__separator--highlighted">
-				<p class="module__description">
-					Baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
-				</p>
-				<fieldset class="form__fieldset">
+				<div class="form__fieldset"> 
+					<h2 class="module__title module__title--highlighted reservation__title">Reservations</h2>
+					<img src="img/module/module__separator--highlighted.png" alt="" class="module__separator module__separator--highlighted">
+					<p class="module__description">
+						Baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
+					</p>
 					<div class="form__field field__name">
 						<label class="field__label" for="guest-name">Name</label>
 						<input class="field__input" id="guest-name" type="text" placeholder="your name*">
@@ -26,13 +26,13 @@
 					</div>
 					<div class="form__field field__date">
 						<label class="field__label" for="date">Date</label>
-						<input class="field__input" id="date" type="date" placeholder="date">
+						<input class="field__input" id="date" type="date">
 					</div>
 					<div class="form__field field__party-number">
 						<label class="field__label" for="party-number">Party Number</label>
 						<input class="field__input" id="party-number" type="number" placeholder="party number">
-					</div>
-				</fieldset>
+					</div>					
+				</div>
 				<input class="button button--highlighted button--wide reservation__button" type="submit" value="Book Now!">
 			</form>
 		</div>

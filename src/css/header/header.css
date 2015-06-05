@@ -82,7 +82,7 @@
 	}
 
 	.header__social-list{
-		display: inline;
+		display: inline-block;
 		width: 187px;
 	}
 }
