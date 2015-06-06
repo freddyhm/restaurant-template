@@ -7,7 +7,7 @@
 ---------- */
 
 .module__menu{
-	height: 1650px;
+	height: 2050px;
 }
 
 /* for accessibility purposes since our psd design doesn't include the menu title */
@@ -49,11 +49,29 @@
 	padding: 0;
 }
 
+@media screen and (min-width: 250px){
+	
+	.module__menu{
+		height: 1750px;
+	}
+
+
+}
+
+
+@media screen and (min-width: 459px){
+
+	.module__menu{
+		height: 1500px;
+	}
+
+}
+
 /* -------
 :: Desktop
 ---------- */
 
-@media screen and (min-width: 640px){
+@media screen and (min-width: 820px){
 
 	.module__menu{
 		height: 960px;

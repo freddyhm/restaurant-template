@@ -6,6 +6,10 @@
   :: Mobile
   ---------- */
 
+.module__reviews{
+	height: 528px;
+}
+
 .reviews__wrapper{
 	position: relative;
 	background: url("../img/reviews/reviews__dish.jpg") no-repeat top right;
@@ -18,28 +22,23 @@
 	position: relative;
 }
 
-.reviews__single{
-	display: inline-block;
-	border-radius: 50%;
-	width: 80px;
-	height: 80px;
-	border: 2px solid #3d3633;
-}
 .reviews__description{
 	max-width: 525px;
 }
 
-.quote{
-	float: left;
-	display: block;
-	position: relative;
-	bottom: 22px;
-	font-family: "Georgia Regular";
-	font-size: 3.5em;
+.quote__footer{
+	margin-top: 1em;
 }
 
 .quote__source{
 	font-style: normal;
+}
+
+@media screen and (min-width: 253px){
+	
+	.module__reviews{
+		height: 428px;
+	}
 }
 
 /* -----------

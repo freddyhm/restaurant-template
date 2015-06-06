@@ -55,6 +55,10 @@
 	font-size: 0.9em;	
 }
 
+.info__blocks{
+	width: 100%;
+}
+
 .info__hours{
 	float:left;
 }
@@ -67,6 +71,13 @@
 	color: #e7bd49;
 }
 
+@media screen and (min-width: 400px){
+	.info__blocks{
+		width: 158px;
+	}
+}
+
+ 
 /* -----------
   :: Desktop
   ---------- */

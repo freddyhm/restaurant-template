@@ -6,6 +6,10 @@
   :: Mobile
   ---------- */
 
+.module__ingredients{
+	height: 800px; 
+}
+
 .ingredients__wrapper{
 	background: url("../img/ingredients/ingredients__bg.jpg") no-repeat center center;
 	background-size: cover;
@@ -49,6 +53,25 @@
 	display: inline-block;
 	margin-right: 1em;
 }
+
+@media screen and (min-width: 256px){
+	.module__ingredients{
+		height: 650px;
+	}
+}
+
+@media screen and (min-width: 338px){
+	.module__ingredients{
+		height: 590px;
+	}
+}
+
+@media screen and (min-width: 391px){
+	.module__ingredients{
+		height: 480px;
+	}
+}
+
 
 /* -----------
   :: Desktop

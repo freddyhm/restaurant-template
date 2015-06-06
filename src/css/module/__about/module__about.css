@@ -20,7 +20,7 @@
 .about__hero{
 	display: block;
   	margin: 0 auto;
-  	padding-left: 59px;
+  	padding-left: 27px;
   	padding-top: 28px;
 }
 
@@ -28,11 +28,22 @@
 	max-width: 525px;
 }
 
+@media screen and (min-width: 333px){
+
+	.module__about{
+		height: 500px;
+	}
+}
+
 /* --------
 :: Desktop
 ----------- */
 
 @media screen and (min-width: 700px){
+
+	.module__about{
+		height: 550px;
+	}
 
 	.about__wrapper{
 		background-position: right center;
