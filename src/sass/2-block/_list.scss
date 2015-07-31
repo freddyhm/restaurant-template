@@ -12,4 +12,15 @@
 	display: inline-block;
 }
 
+/* :: INGREDIENTS ------------ */
+
+.ingredients__list{
+	@include container($ingredient-layout-width);
+}
+
+.ingredients__item{
+	@include span(4);
+}
+
+
 

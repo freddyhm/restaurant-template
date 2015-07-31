@@ -14,6 +14,13 @@
 	color: $light-title-color;
 }
 
+.title--highlighted{
+	@media screen and (min-width: $break-main-section){
+		color: $highlighted-title-color;
+	}
+}
+
+
 /* :: SECTION ------------ */
 
 .section__title{

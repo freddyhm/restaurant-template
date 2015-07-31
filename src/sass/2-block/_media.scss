@@ -18,3 +18,22 @@
 	max-width: 9.0625em; 
 }
 
+.ingredients__single{
+	border-radius: 50%;
+	width: 5em;
+	height: 5em;
+	border: 2px solid #3d3633;
+}
+
+.single__bread{
+	background: url("../img/ingredients/ingredients__bread.jpg") no-repeat center center;
+}
+
+.single__wheat{
+	background: url("../img/ingredients/ingredients__wheat.jpg") no-repeat center center;
+}
+
+.single__paprika{
+	background: url("../img/ingredients/ingredients__paprika.jpg") no-repeat center center;
+}
+

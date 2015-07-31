@@ -75,8 +75,26 @@ body {
 
 .description{
   text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: $light-desc-color;
+  @media screen and (min-width: $break-main-section){
+    color: $desc-color;
+  }
 }
 
 .description--light{
   color: $light-desc-color;
+}
+
+.about__description{
+  @media screen and (min-width: $break-main-section){
+    @include container(20.25em);
+  }
+}
+
+.ingredient__description{
+  @media screen and (min-width: $break-main-section){
+    @include container(20.25em);
+    color: $light-desc-color;
+  }
 }

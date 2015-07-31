@@ -77,10 +77,10 @@ module.exports = function(grunt) {
             } 
         },
 		sass: {
-			options: {
+	/*		options: {
 		         sourceMap: true,
 		         outputStyle: 'compressed'
-		    },
+		    },*/
 			dist: {
 				files: {
 					'dist/css/styles.min.css': 'src/sass/all.scss'

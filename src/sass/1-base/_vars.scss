@@ -5,6 +5,8 @@
 // :: COLORS ------------ //
 
 // Colors - Source: http://chir.ag/projects/name-that-color/
+
+$buddha-gold: #CC9900;
 $pot-pourri: #F1E2D6;
 $dusty-gray: #999999;
 $sirocco: #738685;
@@ -26,6 +28,7 @@ $brand-color: $ziggurat;
 $body-bg-color: $white;
 $font-default-color: $black;
 $title-color: $black;
+$desc-color: $black;
 $light-title-color: $white;
 $light-desc-color: $white;
 $header-text-color: $white;
@@ -43,6 +46,7 @@ $dark-button-bkgd-color: $black;
 
 // Titles
 $light-title-color: $white;
+$highlighted-title-color: $buddha-gold;
 
 // Sections
 $section-bkg-color: $brand-color;
@@ -95,8 +99,8 @@ $wide-layout: 90%;
 $full-layout: 100%;
 
 // Specific
-
 $header-layout-width: 21.875em;
+$ingredient-layout-width: 18em;
 
 // :: BREAKPOINTS ------------ //
 
@@ -106,4 +110,4 @@ $break-med: 640px;
 $break-lrg: 960px; 
 
 // Specific
-
+$break-main-section: 700px; 
