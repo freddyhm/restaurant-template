@@ -1,0 +1,35 @@
+/** 
+* @name 	Menu
+*/
+
+// :: SUBMENU ------------ //
+
+.submenu__item{
+	@media screen and (min-width: $break-main-section){
+		@include gallery (6);
+	}
+}
+
+.submenu__content{
+	@media screen and (min-width: $break-main-section){
+		@include container(18.75em);
+	}
+}
+
+// :: MENU ITEM ------------ //
+
+.menu-item{
+	width: 100%;
+}
+
+.menu-item__title{
+	@include susy-clearfix;
+}
+
+.menu-item__name{
+	float: left;
+}
+
+.menu-item__price{
+	float: right;
+}

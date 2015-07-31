@@ -1,0 +1,44 @@
+/**
+* @name         Footer    
+* @requires     _vars.scss
+*/
+
+.footer{
+	@include container(22.5em);
+	padding-bottom: 10em;
+	text-align: center;
+	@media screen and (min-width: $break-main-section){
+		@include container($full-layout);
+		padding-bottom: 0;
+		background-color: $footer-bkgd-color;
+	}
+}
+
+.footer__content{
+	@include container($main-layout);
+}
+
+.footer__info{
+	@include susy-clearfix;
+}
+
+.info__about{
+	display: none;
+	@media screen and (min-width: $break-main-section){
+		display: block;
+	}
+}
+
+.info__blocks{
+	@include span(6);
+	@media screen and (min-width: $break-main-section){
+		@include span(4);
+	}
+}
+
+.contact__separator, .contact__title, .contact__number{
+	display: block;
+	@media screen and (min-width: $break-main-section){
+		display: none;
+	}
+}

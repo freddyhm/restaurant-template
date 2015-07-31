@@ -15,9 +15,7 @@
 }
 
 .title--highlighted{
-	@media screen and (min-width: $break-main-section){
-		color: $highlighted-title-color;
-	}
+	color: $highlighted-title-color;
 }
 
 
@@ -26,4 +24,11 @@
 .section__title{
 	margin-bottom: 3.125em;
 }
+
+.about__title{
+	@media screen and (min-width: $break-main-section){
+		color: $highlighted-title-color;
+	}
+}
+
 

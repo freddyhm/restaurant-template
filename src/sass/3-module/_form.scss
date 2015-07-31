@@ -1,0 +1,53 @@
+/**
+* @name         Form    
+* @requires     _layout.scss, _vars.scss
+*/
+
+.form{
+	font-family: $text-font-style;
+	@media screen and (min-width:$break-med){
+		@include container(30em);
+	}
+	@media screen and (min-width:$break-lrg){
+		@include span(last 6);
+	}
+}
+
+.form__submit, .form__field, .form__label{
+	@include span(12);
+}
+
+.form__field, .form__details, .form__submit{
+  	padding: 10px;
+}
+
+.form__fields{
+	@include susy-clearfix;
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	@media screen and (min-width:$break-lrg){
+		@include span(6);
+	}
+}	
+
+.form__label{
+	font-size: $small-font;
+	color: $highlighted-title-color;
+}
+
+.form__name{
+	margin-bottom: 1em;
+}
+
+.form__submit{
+	color: #fff;
+	padding: 10px;
+	font-size: 18px;
+	margin-top: 20px;
+	@media screen and (min-width:$break-med){
+  		@include span(4 of last);
+  	}
+  	&:hover{
+  	}
+}

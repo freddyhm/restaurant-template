@@ -1,0 +1,21 @@
+/**
+* @name         Banner    
+*/
+
+.banner__wrapper{
+	display: none;
+	@media screen and (min-width: $break-lrg){
+		display: block;
+		@include container (22.875em); 
+		@include span(first 6);
+		margin-top: 1em;
+	}
+}
+
+.banner--left{
+	float: left;
+}
+
+.banner--right{
+	float: right;
+}

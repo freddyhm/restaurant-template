@@ -1,40 +1,34 @@
-<section class="module module__reservation">
-	<div class="module__content module__content--dark reservation__content">
-		<div class="banner">
-			<figure>
-				<img src="img/reservation/reservation__beef.jpg" alt="" class="banner--left">
-			</figure>
-			<figure>
-				<img src="img/reservation/reservation__granola-yogurt.jpg" alt="" class="banner--right">
-			</figure>
-		</div>
-		<div class="reservation__wrapper">
-			<form class="reservation__form" method="POST" action="#">
-				<div class="form__fieldset"> 
-					<h2 class="module__title module__title--highlighted reservation__title">Reservations</h2>
-					<img src="img/module/module__separator--highlighted.png" alt="" class="module__separator module__separator--highlighted">
-					<p class="module__description">
-						Baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
-					</p>
-					<div class="form__field field__name">
-						<label class="field__label" for="guest-name">Name</label>
-						<input class="field__input" id="guest-name" type="text" placeholder="your name*">
-					</div>
-					<div class="form__field field__email">
-						<label class="field__label" for="email">Email</label>
-						<input class="field__input"  id="email" type="email" placeholder="your email*">
-					</div>
-					<div class="form__field field__date">
-						<label class="field__label" for="date">Date</label>
-						<input class="field__input" id="date" type="date">
-					</div>
-					<div class="form__field field__party-number">
-						<label class="field__label" for="party-number">Party Number</label>
-						<input class="field__input" id="party-number" type="number" placeholder="party number">
-					</div>					
-				</div>
-				<input class="button button--highlighted button--wide reservation__button" type="submit" value="Book Now!">
-			</form>
-		</div>
+<section class="section">
+	<div class="banner__wrapper">
+		<figure class="figure banner--left">
+			<img src="img/reservation/reservation__beef.jpg" alt="">
+		</figure>
+		<figure class="figure banner--right">
+			<img src="img/reservation/reservation__granola-yogurt.jpg" alt="">
+		</figure>
 	</div>
+	<form class="form" method="POST" action="#">
+		<h2 class="title title--highlighted">Reservations</h2>
+		<img class="media" src="img/module/module__separator--highlighted.png" alt="">
+		<p class="tiny description description--dark">
+			If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers coming back for more. Perfect materials and freshly baked food. 
+		</p>
+		<div class="form__fields field__name">
+			<label class="form__label" for="guest-name">Name</label>
+			<input class="form__field" id="guest-name" type="text" placeholder="your name*">
+		</div>
+		<div class="form__fields field__email">
+			<label class="form__label" for="email">Email</label>
+			<input class="form__field"  id="email" type="email" placeholder="your email*">
+		</div>
+		<div class="form__fields field__date">
+			<label class="form__label" for="date">Date</label>
+			<input class="form__field" id="date" type="date">
+		</div>
+		<div class="form__fields field__party-number">
+			<label class="form__label" for="party-number">Party Number</label>
+			<input class="form__field" id="party-number" type="number" placeholder="party number">
+		</div>					
+		<input class="button button--highlighted form__submit" type="submit" value="Book Now!">
+	</form>
 </section>

@@ -47,6 +47,12 @@ $susy: (
 	}
 }
 
+.about__content{
+	@media screen and (min-width: $break-main-section){
+		@include span(6);
+	}
+}
+
 .ingredient__section{
 	padding: 5em 0;
 }
@@ -64,8 +70,19 @@ $susy: (
 	}
 }
 
-.about__content{
+
+/* :: REVIEWS ------------ */
+
+.review__wrapper{
+	background-image: url("../img/reviews/reviews__dish.jpg");
+	background-position: top right;
+}
+
+.review__content{
 	@media screen and (min-width: $break-main-section){
-		@include span(6);
+		@include container(25em);
+		background-color: rgba(0, 0, 0, 0.8);
+		padding: 1em;
 	}
 }
+

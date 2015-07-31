@@ -5,7 +5,6 @@
 // :: COLORS ------------ //
 
 // Colors - Source: http://chir.ag/projects/name-that-color/
-
 $buddha-gold: #CC9900;
 $pot-pourri: #F1E2D6;
 $dusty-gray: #999999;
@@ -27,11 +26,9 @@ $teal-blue: #02394E;
 $brand-color: $ziggurat;
 $body-bg-color: $white;
 $font-default-color: $black;
-$title-color: $black;
-$desc-color: $black;
-$light-title-color: $white;
-$light-desc-color: $white;
-$header-text-color: $white;
+
+// Bars
+$bar-color: $buddha-gold;
 
 // Links
 $link-color: $sirocco; 
@@ -45,18 +42,34 @@ $dark-button-text-color: $white;
 $dark-button-bkgd-color: $black;
 
 // Titles
+$title-color: $black;
 $light-title-color: $white;
 $highlighted-title-color: $buddha-gold;
 
+// Text
+$highlighted-text-color: $buddha-gold;
+$desc-color: $black;
+$light-desc-color: $white;
+$header-text-color: $white;
+
+// Quote
+$quote-color: $white;
+
 // Sections
 $section-bkg-color: $brand-color;
+
+// Button
+$highlighted-button-color: $buddha-gold;
+
+// Footer
+$footer-bkgd-color: $black;
 
 // :: TYPOGRAPHY ------------ //
 
 // Font style
 $body-font-style: "Yeseva One";
 $menu-font-style: "Gentium Book Basic";
-
+$text-font-style: "Lato";
 
 // Font sizes
 $gigantic-font: 6.875em;

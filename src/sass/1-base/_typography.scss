@@ -75,26 +75,45 @@ body {
 
 .description{
   text-align: center;
-  font-family: 'Lato', sans-serif;
-  color: $light-desc-color;
-  @media screen and (min-width: $break-main-section){
-    color: $desc-color;
-  }
+  font-family: $text-font-style, sans-serif;
+  color: $desc-color;
 }
 
 .description--light{
   color: $light-desc-color;
 }
 
+/* :: ABOUT ------------ */
+
 .about__description{
+  color: $light-desc-color;
+  @media screen and (min-width: $break-main-section){
+    @include container(20.25em);
+    color: $desc-color;
+  }
+}
+
+/* :: INGREDIENT ------------ */
+
+.ingredient__description{
+  color: $light-desc-color;
   @media screen and (min-width: $break-main-section){
     @include container(20.25em);
   }
 }
 
-.ingredient__description{
+/* :: MENU ------------ */
+
+.menu__description{
+  text-align: left;
+  color: $desc-color;
+}
+
+/* :: CONTACT ------------ */
+
+.contact__description{
   @media screen and (min-width: $break-main-section){
-    @include container(20.25em);
+    font-size: $tiny-font;
     color: $light-desc-color;
   }
 }
