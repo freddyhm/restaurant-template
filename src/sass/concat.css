@@ -1,0 +1,1703 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  box-sizing: content-box; /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* -----------------------------------------------
+  :: LAYOUT & RESETS
+  --------------------------------------------- */
+
+figure, blockquote, ul{
+	margin: 0;
+}
+
+ul{
+	padding: 0;
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;	
+	color: inherit;
+}
+
+button, input{
+	border: none;
+}
+
+address{
+	font-style: normal;
+}
+
+
+
+
+/*------------------------------------*\
+    #BUTTON
+\*------------------------------------*/
+
+.button{
+	width: 100%;
+	height: 40px;
+	text-transform: uppercase;
+	line-height: 40px;
+	opacity: 0.8;
+	cursor: pointer;
+	color: #fff;
+}
+
+.button--light{
+	background-color: #fff;
+	color: #000;
+}
+
+.button--dark{
+	background-color: #000;
+} 
+
+.button--highlighted{
+	margin: 1.5em auto;
+	background-color: #c9a131;	
+}
+
+.button--wide{
+	width: 100%;
+}
+
+@media screen and (min-width: 334px){
+	.button{
+		width: 150px;
+	}
+}
+/* -----------------------------------------------
+  :: NAV
+  --------------------------------------------- */
+
+/* ------------
+  :: Mobile
+  ---------- */
+
+.nav__primary{
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+.nav__item{
+	display: inline-block;
+	height: 3.5em;
+  	line-height: 3.5em;
+}
+
+.nav__container{
+	display: none;
+	clear: right;
+	width: 200px;
+	height: 400px;
+	background-color: #fff;
+}
+
+.nav__container--visible{
+	display: block;
+}
+
+.nav__stack{
+	float: right;
+	margin-left: 73px;
+	cursor: pointer;
+}
+
+.nav__stack__container{
+	width: 3em;
+	height: 3em;
+}
+
+.nav__stack__icon{
+	fill: #fff;
+}
+
+.nav__list{
+	width: 100px;
+}
+
+.nav__item--selected{
+ 	display: inline-block;
+ 	border-top: 2px solid #fff;
+}
+
+/* skip links for accessibility */
+
+.link__skip-all a{
+	padding:6px;
+	position: absolute;
+	top:-40px;
+	left:0px;
+	color:white;
+	border-right:1px solid white;
+	border-bottom:1px solid white;
+	border-bottom-right-radius:8px;
+	background:transparent;
+	-webkit-transition: top 1s ease-out, background 1s linear;
+    transition: top 1s ease-out, background 1s linear;
+    z-index: 100;
+}
+
+.link__skip-all a:focus {
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:#BF1722;
+	-webkit-transition: top .1s ease-in, background .5s linear;
+    transition: top .1s ease-in, background .5s linear;
+}
+
+/* -----------
+  :: Desktop
+  ---------- */
+
+@media screen and (min-width: 800px){
+
+	.nav__stack{
+		display: none;
+	}
+
+	.nav__primary{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 600px;
+	}
+
+	.nav__container{
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: transparent;
+	}
+	
+	.nav__list{
+		width: 400px;
+		float: left;
+	}
+}
+/*------------------------------------*\
+    #SOCIAL-LIST
+\*------------------------------------*/
+
+.social-list{
+	margin-top: 0;
+	width: 100px;
+	height: 100px;
+}
+
+.social__item{
+	display: inline-block;
+}
+/* -----------------------------------------------
+  :: HEADER
+  --------------------------------------------- */
+
+/* ------------
+  :: Mobile
+  ---------- */
+
+.header{
+	width: 100%;
+	height: 450px;
+	background: url('../img/header/bg.jpg') no-repeat center center;
+	background-size: cover; 
+}
+
+.logo{
+	display: block;
+	margin: 0 auto;
+}
+
+.header__content{
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+.header__content::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.header__separator{
+	margin: 1.4em auto;
+	display: block;
+
+}
+
+.header__title{
+	font-size: 1.8em;
+	font-family: "Yeseva One", cursive;
+	text-transform: lowercase;
+	color: #fff;
+}
+
+.header__button--right{ margin-top: 1.5em; }
+
+.container__cta{
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* ----------------
+  :: Small mobile
+  ----------------- */
+
+@media screen and (min-width: 334px){
+	
+	.header{ height: 335px; }
+
+	.container__cta{
+		height: 40px;
+		width: 320px;
+	}
+
+	.header__button--left{ float: left; }
+
+	.header__button--right{ 
+		float: right; 
+		margin-top: 0;
+	}
+}
+
+/* -------------------------
+  :: Slightly larger mobile
+  -------------------------- */
+
+@media screen and (min-width: 350px){
+
+	.header__content{ width: 350px; }
+}
+
+/* -----------
+  :: Desktop
+  ---------- */
+
+@media screen and (min-width: 800px){
+
+	.header{ height: 480px; }
+
+	.header__content{ width: 635px;	}
+
+	.header__title{
+		font-size: 3em;
+	}
+
+	.logo{
+		padding-left: 9em;
+  		padding-top: 1.5em;
+  		margin: 0;
+	}
+
+	.header__social-list{
+		display: inline-block;
+		width: 187px;
+	}
+}
+
+
+
+
+
+/* -----------------------------------------------
+  :: MODULE
+  --------------------------------------------- */
+
+.module{
+	width: 100%;
+	height: 750px;
+}
+
+.module__content{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+}
+
+.module__content--dark{
+	color: #585858;
+}
+
+.module__title{
+	margin: 0;
+	padding: 1.2em 0 0.4em 0;
+	font-size: 1.5em;
+	font-family: 'Yeseva One', cursive;
+}
+
+.module__title--highlighted{
+	color: #cc9900;
+}
+
+.module__description{
+	margin: 1.4em auto 0 auto;
+}
+
+.module__overlay{
+	position: absolute;
+	width: 100%;
+	height: inherit;
+	background-color: black;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.module__separator{ 
+	width: 100%; 
+}
+
+.module__separator--highlighted{
+	max-width: 247px;
+}
+
+.module__separator--light{
+	max-width: 157px;
+}
+
+/* ----------------
+  :: Small mobile
+  ----------------- */
+
+@media screen and (min-width: 334px){
+	.module{ height: 450px; }
+}
+
+
+
+
+/* ------------------------------------------
+:: ABOUT
+--------------------------------------------- */
+
+/* ------------
+:: Mobile
+---------- */
+
+.about__wrapper{
+	background: url("../img/about/about__dish.png") no-repeat center center;
+	background-size: 421px 425px;
+	height: inherit;
+	width: 100%;	
+}
+
+.about__content{
+	position: relative;
+}
+
+.about__hero{
+	display: block;
+  	margin: 0 auto;
+  	padding-left: 27px;
+  	padding-top: 28px;
+}
+
+.about__description{
+	max-width: 525px;
+}
+
+@media screen and (min-width: 333px){
+
+	.module__about{
+		height: 500px;
+	}
+}
+
+/* --------
+:: Desktop
+----------- */
+
+@media screen and (min-width: 700px){
+
+	.module__about{
+		height: 550px;
+	}
+
+	.about__wrapper{
+		background-position: right center;
+		max-width: 778px;
+		margin: 0 auto;
+	}
+
+	.about__overlay{
+		display: none;
+	}
+
+	.about__title{
+		color: #cc9900;
+	}
+
+	.about__description{
+		width: 300px;
+		font-size: 0.8em;
+		color: #585858;
+	}
+
+	.about__content{
+		width: 400px; 
+		float: left;
+	}
+}
+/* -----------------------------------------------
+  :: CONTACT
+  --------------------------------------------- */
+
+ /* ------------
+  :: Mobile
+  ---------- */
+
+/* Separator for individual info modules - desktop only */
+
+.info__separator{
+	display: none;
+}
+
+/* About module - desktop only */
+
+.info__about{
+	display: none;
+}
+
+.contact__wrapper{
+	background: url("../img/contact/contact__dish.png") no-repeat center center;
+	background-size: 421px 425px;
+	height: inherit;
+	width: 100%;	
+}
+
+.contact__title{
+	color: #cc9900;
+}
+
+.contact__content{
+	position: relative;
+	max-width: 360px;
+}
+
+/* Info wrapper & modules */
+
+.contact__info-wrapper{
+	width: 100%;
+}
+
+.contact__info-wrapper::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.info__title{
+	font-size: 1.2em;
+	margin-bottom: 0;
+}
+
+.info__description{
+	font-size: 0.9em;	
+}
+
+.info__blocks{
+	width: 100%;
+}
+
+.info__hours{
+	float:left;
+}
+
+.info__locations{
+	float: right;
+}
+
+.address__link{
+	color: #e7bd49;
+}
+
+@media screen and (min-width: 400px){
+	.info__blocks{
+		width: 158px;
+	}
+}
+
+ 
+/* -----------
+  :: Desktop
+  ---------- */
+
+@media screen and (min-width: 830px){
+	
+	/* Hide module title's separator */
+
+	.contact__separator{
+		display: none;
+	}
+
+	.module__contact{
+		background-color: #000;
+		height: 200px;
+	}
+
+	.contact__content{
+		width: 100%;
+		max-width: 800px;
+		margin: 0 auto;
+		color: #fff;
+	}
+	
+	.info__blocks{
+		width: 200px;
+		float: left;
+		margin-right: 4em;
+	}	
+
+	.info__separator{
+		display: inline-block;	
+	}	
+
+	.info__about{
+		display: block;
+	}
+
+	.info__locations{
+		float: left;
+	}
+
+	.info__description{
+		font-size: 0.7em;
+	}
+
+	.address__link{
+		font-weight: 700;
+		color: #585858;
+	}
+
+	.contact__title{
+		display: none;
+	}
+
+	.contact__button{
+		display: none;
+	}
+}
+/* -----------------------------------------------
+  :: INGREDIENTS
+  --------------------------------------------- */
+
+  /* ------------
+  :: Mobile
+  ---------- */
+
+.module__ingredients{
+	height: 800px; 
+}
+
+.ingredients__wrapper{
+	background: url("../img/ingredients/ingredients__bg.jpg") no-repeat center center;
+	background-size: cover;
+	height: inherit;
+	width: 100%;	
+}
+
+.ingredients__content{
+	position: relative;
+}
+
+.ingredients__single{
+	display: inline-block;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	border: 2px solid #3d3633;
+}
+
+.single__bread{
+	background: url("../img/ingredients/ingredients__bread.jpg") no-repeat center center;
+}
+
+.single__wheat{
+	background: url("../img/ingredients/ingredients__wheat.jpg") no-repeat center center;
+}
+
+.single__paprika{
+	background: url("../img/ingredients/ingredients__paprika.jpg") no-repeat center center;
+}
+
+.ingredients__description{
+	max-width: 525px;
+}
+
+.ingredients__list{
+	margin-top: 3.5em;
+}
+
+.ingredients__item{
+	display: inline-block;
+	margin-right: 1em;
+}
+
+@media screen and (min-width: 256px){
+	.module__ingredients{
+		height: 650px;
+	}
+}
+
+@media screen and (min-width: 338px){
+	.module__ingredients{
+		height: 590px;
+	}
+}
+
+@media screen and (min-width: 391px){
+	.module__ingredients{
+		height: 480px;
+	}
+}
+
+
+/* -----------
+  :: Desktop
+  ---------- */
+
+@media screen and (min-width: 700px){
+
+	.module__ingredients{
+		height: 500px;
+	}
+
+	.ingredients__overlay{
+		display: none;
+	}
+
+	.ingredients__content{
+		float: right;
+		width: 400px; 
+		margin-top: 4em;
+		margin-right: 10em;
+		padding-bottom: 1.5em;
+		background-color: black;
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	.ingredients__title{
+		color: #fff;
+	}
+
+	.ingredients__description{
+		width: 300px;
+		font-size: 0.8em;
+	}
+
+	.ingredients__list{
+		margin-top: 3em;
+	}
+
+
+}
+/* ------------------------------------------
+:: MENU
+--------------------------------------------- */
+
+/* -------
+:: Mobile
+---------- */
+
+.module__menu{
+	height: 2050px;
+}
+
+/* for accessibility purposes since our psd design doesn't include the menu title */
+.menu__title{
+	display: none;
+}
+
+.category__dish-list{
+	display: none;
+}
+
+.category__dish--active{
+	display: block;
+}
+
+.dish__title{
+	float: left;
+}
+
+.dish__price{
+	float: right;
+}
+
+.dish__bar{
+	clear:both;
+	border: none;
+	background-color: #cc9900;
+}
+
+.category__header{
+	border: 2px solid #cc9900;
+	margin-top: 11px;
+	margin-bottom: 26px;
+	padding: 10px;
+	background-color: gray;
+}
+
+.category__title{
+	padding: 0;
+}
+
+@media screen and (min-width: 250px){
+	
+	.module__menu{
+		height: 1750px;
+	}
+
+
+}
+
+
+@media screen and (min-width: 459px){
+
+	.module__menu{
+		height: 1500px;
+	}
+
+}
+
+/* -------
+:: Desktop
+---------- */
+
+@media screen and (min-width: 820px){
+
+	.module__menu{
+		height: 960px;
+	}
+
+	.category__header{
+		border: none;
+		background-color: transparent;
+	}
+
+	.menu__category{
+		width: 300px;
+	}
+
+	.menu__category:last-of-type{
+		position: relative;
+		bottom: 83px;
+	}
+
+	.menu__list{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		width: 700px;
+		margin: 0 auto;
+	}
+}
+/* ------------------------------------------
+:: RESERVATION
+--------------------------------------------- */
+
+/* -------
+:: Mobile
+---------- */
+
+.banner{
+	display: none;
+}
+
+.reservation__title{
+	width: 100%;
+}
+
+.module__reservation{
+	height: 660px;
+}
+
+.reservation__content{
+	max-width: 500px;
+}
+
+.reservation__form{
+	margin: 1.5em auto 0 auto;
+}
+
+.form__field{
+	margin-top: 0.7em;
+}
+
+.field__label{
+	display: block;
+	text-align: left;
+	color: #c9a131;
+}
+
+.field__input{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.8em;
+	border: 1px solid #c8c6c6;
+}
+
+.form__submit-button{
+	width: 100%;
+}
+
+/* -------
+:: Desktop
+---------- */
+
+@media screen and (min-width: 1000px){
+
+.banner{
+	display: block;
+	float: left;
+	margin-top: 5em;
+	width: 366px;
+	height: 325px;
+}
+
+.banner--left{
+	float: left;
+}
+
+.banner--right{
+	float: right;
+}
+
+.reservation__wrapper{
+	float: right;
+	margin-top: 5em;
+	width: 366px;
+	height: 325px; 
+}
+
+.reservation__content{
+	max-width: 795px;
+}
+
+.reservation__content:after{
+	content: "";
+	clear: both;
+}
+
+.reservation__title{
+	padding-top: 0;
+}
+
+.form__field{
+	width: 45%;
+}
+
+.field__input{
+	padding: 0.3em;
+}
+
+.form__field:nth-of-type(2n+1){
+	float: left;
+}
+
+.form__field:nth-of-type(2n+2){
+	float: right;
+}
+
+.reservation__button{
+	width: 150px;
+	text-transform: none;
+}
+
+
+}
+/* -----------------------------------------------
+  :: REVIEWS
+  --------------------------------------------- */
+
+/* ------------
+  :: Mobile
+  ---------- */
+
+.module__reviews{
+	height: 528px;
+}
+
+.reviews__wrapper{
+	position: relative;
+	background: url("../img/reviews/reviews__dish.jpg") no-repeat top right;
+	background-size: cover;
+	height: inherit;
+	width: 100%;	
+}
+
+.reviews__content{
+	position: relative;
+}
+
+.reviews__description{
+	max-width: 525px;
+}
+
+.quote__footer{
+	margin-top: 1em;
+}
+
+.quote__source{
+	font-style: normal;
+}
+
+@media screen and (min-width: 253px){
+	
+	.module__reviews{
+		height: 428px;
+	}
+}
+
+/* -----------
+  :: Desktop
+  ---------- */
+
+@media screen and (min-width: 700px){
+
+	.module__reviews{
+		height: 500px;
+	}
+
+	.reviews__overlay{
+		display: none;
+	}
+
+	.reviews__content{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 490px; 
+		height: 355px;
+		margin: auto;
+		background-color: black;
+		background-color: rgba(0,0,0,0.8);
+	}
+
+	.reviews__title{
+		color: #fff;
+	}
+
+	.reviews__description{
+		width: 300px;
+		font-size: 0.8em;
+	}
+
+	.quote__footer{
+		margin-top: 50px;
+	}	
+
+	.reviews__list{
+		margin-top: 3em;
+	}
+}

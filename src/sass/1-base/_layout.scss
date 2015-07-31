@@ -1,0 +1,35 @@
+/**
+* @name         Layout    
+* @requires     Susy
+*/
+
+// :: GRID ------------  
+
+@import "../../../bower_components/susy/sass/susy";
+
+$susy: (
+	columns: 12,
+	global-box-sizing: border-box,
+	gutter-position: split
+);
+
+@include layout(12);
+@include border-box-sizing;
+
+/* :: SECTIONS ------------ */
+
+.section{
+	padding: 4em 0;
+	position: relative;
+	@include container($main-layout);
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.about__section{
+	position: relative;
+	background: url("../img/about/about__dish.png") center center no-repeat;
+	background-size: 26.3125em 26.5625em;
+}

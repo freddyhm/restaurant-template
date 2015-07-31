@@ -1,0 +1,109 @@
+/**
+* @name         Variables
+*/
+
+// :: COLORS ------------ //
+
+// Colors - Source: http://chir.ag/projects/name-that-color/
+$pot-pourri: #F1E2D6;
+$dusty-gray: #999999;
+$sirocco: #738685;
+$teal-blue: #02394E;
+$dove-gray: #666666;
+$gray-chateau: #A0A5A8;
+$ziggurat: #B8D5DB;
+$horizon: #588A9E;
+$cornflower: #82C8E4;
+$astral: #3779A0;
+$white:  #fff;
+$gray:   #aaa;
+$black:  #111;
+$teal-blue: #02394E;
+
+
+// General
+$brand-color: $ziggurat;
+$body-bg-color: $white;
+$font-default-color: $black;
+$title-color: $black;
+$light-title-color: $white;
+$light-desc-color: $white;
+$header-text-color: $white;
+
+// Links
+$link-color: $sirocco; 
+$text-link-color: $horizon;
+$text-link-color-hover: $teal-blue;
+
+// Buttons
+$light-button-bkgd-color: $white;
+$light-button-text-color: $black;
+$dark-button-text-color: $white;
+$dark-button-bkgd-color: $black;
+
+// Titles
+$light-title-color: $white;
+
+// Sections
+$section-bkg-color: $brand-color;
+
+// :: TYPOGRAPHY ------------ //
+
+// Font style
+$body-font-style: "Yeseva One";
+$menu-font-style: "Gentium Book Basic";
+
+
+// Font sizes
+$gigantic-font: 6.875em;
+$huge-font: 4.250em;
+$larger-font: 3.625em;
+$large-font: 2.625em; 
+$biggest-font: 2em;
+$bigger-font: 1.6em;
+$big-font: 1.4em;
+$medium-font: 1em;
+$small-font: 0.938em;
+$smaller-font: 0.9em;
+$tiny-font: 0.8em;
+
+// Line height
+$tall-line-height: 1.38;
+$normal-line-height:  1.2;
+$short-line-height: 1.14;
+$lil-line-height: 1.09;
+$tiny-line-height: 1.05;
+
+// Letter spacing
+$normal-letter-spacing: 0.05em;
+$narrow-letter-spacing: -0.1252em;
+$skinny-letter-spacing: -0.063em;
+
+// Font weights
+$lightest: 100;
+$lighter: 200;
+$light: 300;
+$regular: 400;
+$bold: 600;
+
+// :: LAYOUT ------------ //
+
+// General
+$main-layout: 80%;
+$medium-layout: 85%;
+$wide-layout: 90%;
+$full-layout: 100%;
+
+// Specific
+
+$header-layout-width: 21.875em;
+
+// :: BREAKPOINTS ------------ //
+
+// General
+$break-sm: 480px;
+$break-med: 640px;
+$break-lrg: 960px; 
+
+// Specific
+

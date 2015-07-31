@@ -1,0 +1,82 @@
+/**
+* @name         Typography    
+* @requires     _vars.scss, _layout.scss
+*/
+
+/* :: HEADINGS ------------ */
+
+.gigantic, 
+.huge, 
+.large, 
+.bigger, 
+.big,{
+  font-weight: bold;
+}
+
+.gigantic{
+  font-size: $gigantic-font;
+  line-height: $lil-line-height;
+  letter-spacing: $narrow-letter-spacing;
+}
+
+.huge{
+  font-size: $huge-font;
+  line-height: $tiny-line-height;
+  letter-spacing: $skinny-letter-spacing;
+}
+
+.large{
+  font-size: $large-font;
+  line-height: $short-line-height;
+}
+
+.biggest{
+  font-size: $biggest-font;
+  line-height: $tall-line-height;
+}
+
+.bigger{
+  font-size: $bigger-font;
+  line-height: $tall-line-height;
+}
+
+.big{
+  font-size: $big-font;
+  line-height: $tall-line-height;
+}
+
+.medium{
+  font-size: $medium-font;
+  line-height: $normal-line-height;
+}
+
+.small{
+  font-size: $small-font;
+  line-height: $normal-line-height;
+}
+
+.smaller{
+  font-size: $smaller-font;
+}
+
+.tiny{
+  font-size: $tiny-font;
+}
+
+
+/* :: BASE TYPE ------------ */
+
+body {
+  font-family: $body-font-style, sans-serif;
+  font-size: 100%;
+  background-color: $body-bg-color;
+  color: $font-default-color;
+}
+
+.description{
+  text-align: center;
+}
+
+.description--light{
+  color: $light-desc-color;
+}

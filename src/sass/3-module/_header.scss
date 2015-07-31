@@ -1,0 +1,53 @@
+/* -----------------------------------------------
+  :: HEADER
+  --------------------------------------------- */
+
+
+.header{
+	background: url('../img/header/bg.jpg') no-repeat center center;
+	background-size: cover; 
+}
+
+.header__wrapper{
+	@include container($header-layout-width);
+	padding: 1em 0;
+	max-width: 21.875em;
+	@media screen and (min-width: $break-med){
+		@include container($wide-layout);
+		padding-bottom: 7em;
+	}
+} 
+
+.header__content{
+	@media screen and (min-width: $break-med){
+		@include container(45.9375em);
+		margin-top: 7em;
+	}
+}
+
+.header__title{
+	margin: 1em;
+	text-transform: lowercase;
+	color: $header-text-color;
+	@media screen and (min-width: $break-med){
+		font-size: 3.58625em;
+	}
+}
+
+.logo{
+	@media screen and (min-width: $break-med){
+		float: left;
+	}
+}
+
+.cta{
+	@include susy-clearfix;
+	margin: 1em;
+	@media screen and (min-width: $break-med){
+		@include container(20em);
+	}
+}
+
+.header__button--left, .header__button--right{
+	@include span(6);
+}

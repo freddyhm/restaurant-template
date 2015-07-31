@@ -1,0 +1,26 @@
+/**
+* @name         Skip links    
+*/
+
+// skip links for accessibility 
+
+.link__skip-all a{
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 6px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom-right-radius: 8px;
+  font-weight: bold;
+  transition: top 1s ease-out, background 1s linear;
+  color: white;
+}
+
+.link__skip-all a:focus{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: darkred;
+  transition: top .1s ease-in, background .5s linear;
+}

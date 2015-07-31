@@ -1,0 +1,22 @@
+/**
+* @name 		Title
+* @requires     _vars.scss
+*/
+
+.title, 
+.subtitle{
+ 	text-align: center;
+	letter-spacing: $normal-letter-spacing;
+	color: $title-color;
+}
+
+.title--light{
+	color: $light-title-color;
+}
+
+/* :: SECTION ------------ */
+
+.section__title{
+	margin-bottom: 3.125em;
+}
+
