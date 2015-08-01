@@ -8,11 +8,16 @@
 	@media screen and (min-width: $break-main-section){
 		@include gallery (6);
 	}
+	&:last-of-type{
+		@media screen and (min-width: $break-main-section){
+			margin-top: em(-80px);  
+		}
+	}
 }
 
 .submenu__content{
 	@media screen and (min-width: $break-main-section){
-		@include container(18.75em);
+		@include container(19.75em);
 	}
 }
 

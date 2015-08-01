@@ -89,7 +89,7 @@ module.exports = function(grunt) {
 		},
 		copy: {
 			js:{
-				src: ['js/vendor/modernizr.js'],
+				src: ['js/*.js', 'js/vendor/*.js'],
 				dest: 'dist',
 				expand: true,
 				cwd: 'src'
@@ -103,7 +103,7 @@ module.exports = function(grunt) {
 		},
 		concat: {
 		  	js: {
-		    	src: ['src/js/vendor/jquery-1.11.3.js', 'src/js/vendor/slick.js', 'src/js/main.js'],
+		    	src: ['src/js/main.js'],
 		    	dest: 'src/js/custom.min.js'
 		  	}
 		},

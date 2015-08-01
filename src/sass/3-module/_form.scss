@@ -18,12 +18,17 @@
 }
 
 .form__field, .form__details, .form__submit{
-  	padding: 10px;
+  	padding: em(3px);
+}
+
+.form__field::-webkit-input-placeholder {
+	font-size: em(12.8px);
+   	font-style: italic;
 }
 
 .form__fields{
 	@include susy-clearfix;
-	margin: 1em 0;
+	margin: 0.8em 0;
 	padding: 0;
 	border: none;
 	@media screen and (min-width:$break-lrg){
@@ -40,14 +45,16 @@
 	margin-bottom: 1em;
 }
 
+.submit__wrapper{
+	@include span(12);
+}
+
 .form__submit{
-	color: #fff;
-	padding: 10px;
-	font-size: 18px;
+	@include container(em(160px));
+	float: right;
+	font-size: em(12.8px);
 	margin-top: 20px;
-	@media screen and (min-width:$break-med){
-  		@include span(4 of last);
-  	}
+	color: #fff;
   	&:hover{
   	}
 }

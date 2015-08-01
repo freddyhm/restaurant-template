@@ -38,20 +38,42 @@ $susy: (
 	}
 }
 
-.about__wrapper{
+/* :: ABOUT ------------ */
+
+.dish__wrapper{ 
 	background-image: url("../img/about/about__dish.png");
-	background-size: 26.3125em 26.5625em;
-	@media screen and (min-width: $break-main-section){
-		@include container(48.625em);
+	background-size: 33.3125em 33.5625em;
+	@media screen and (min-width: $break-about-section){
+		@include container(62.375em);
 		background-position: right center;
 	}
 }
 
+.arc__pattern__wrapper{
+	background-image: url("../img/arc__pattern.png"); 
+}
+
 .about__content{
-	@media screen and (min-width: $break-main-section){
+	@media screen and (min-width: $break-about-section){
 		@include span(6);
 	}
 }
+
+.about__overlay{
+	background-color: rgba(0,0,0,0.5);
+	@media screen and (min-width: $break-about-section){
+		background-color: rgba(0,0,0,0); 	
+	}
+}
+
+.about__section{
+	@media screen and (min-width: $break-about-section){
+		max-width: 100%;
+		padding-bottom: em(90px);
+	}
+}
+
+/* :: INGREDIENT ------------ */
 
 .ingredient__section{
 	padding: 5em 0;
@@ -64,10 +86,19 @@ $susy: (
 .ingredients__content{
 	@media screen and (min-width: $break-main-section){
 		@include span(6 last);
-		max-width: 25em;
+		width: 30em;
 		background-color: rgba(0, 0, 0, 0.5);
-		padding: 1em;
+		padding-top: calc(1em + 29.08px); 
+		padding-bottom: em(65px);
+		padding-left: em(65px);
+		padding-right: em(65px);
 	}
+}
+
+/* :: MENU ------------ */
+
+.hex__pattern__wrapper{
+	background-image: url("../img/hex__pattern.png");
 }
 
 
@@ -80,7 +111,7 @@ $susy: (
 
 .review__content{
 	@media screen and (min-width: $break-main-section){
-		@include container(25em);
+		@include container(em(615px));
 		background-color: rgba(0, 0, 0, 0.8);
 		padding: 1em;
 	}

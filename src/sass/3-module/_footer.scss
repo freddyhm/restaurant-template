@@ -4,22 +4,29 @@
 */
 
 .footer{
-	@include container(22.5em);
+	
+	@include container($main-layout);
 	padding-bottom: 10em;
 	text-align: center;
 	@media screen and (min-width: $break-main-section){
 		@include container($full-layout);
 		padding-bottom: 0;
 		background-color: $footer-bkgd-color;
+		font-weight: 700;
 	}
 }
 
 .footer__content{
-	@include container($main-layout);
+	@media screen and (min-width: $break-main-section){
+		@include container($main-layout);
+		padding-bottom: em(54px);
+		padding-top: em(40px);
+	}
 }
 
 .footer__info{
 	@include susy-clearfix;
+	margin-top: 2em;
 }
 
 .info__about{
@@ -30,7 +37,7 @@
 }
 
 .info__blocks{
-	@include span(6);
+	@include span(12);
 	@media screen and (min-width: $break-main-section){
 		@include span(4);
 	}
@@ -40,5 +47,20 @@
 	display: block;
 	@media screen and (min-width: $break-main-section){
 		display: none;
+	}
+}
+
+.info__separator{
+	display: none;
+	@media screen and (min-width: $break-main-section){
+		display: block;
+	}
+}
+
+.hours__time{
+	display: block;
+	margin: 0.5em;
+	@media screen and (min-width: $break-main-section){
+		margin: 0;
 	}
 }

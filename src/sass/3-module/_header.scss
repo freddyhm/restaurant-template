@@ -13,13 +13,13 @@
 	padding: 1em 0;
 	@media screen and (min-width: $break-med){
 		@include container($wide-layout);
-		padding-bottom: 7em;
+		padding-bottom: em(115px);
 	}
-} 
+}  
 
 .header__content{
 	@media screen and (min-width: $break-med){
-		@include container(45.9375em);
+		@include container(em(710px));
 		margin-top: 7em;
 	}
 }
@@ -27,9 +27,12 @@
 .header__title{
 	margin: 1em;
 	text-transform: lowercase;
+	text-shadow: 1px 1px 1px $black;
 	color: $header-text-color;
 	@media screen and (min-width: $break-med){
-		font-size: 3.58625em;
+		font-size: em(52px);
+		margin: 150px 0 25px 0;
+		text-shadow: 2px 2px 2px $black;
 	}
 }
 
@@ -49,4 +52,8 @@
 
 .header__button--left, .header__button--right{
 	@include span(6);
+}
+
+.header__button--left{
+
 }

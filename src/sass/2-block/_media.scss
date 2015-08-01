@@ -13,9 +13,10 @@
 /* :: FACE ------------ */
 
 .face{
-	padding-left: 2em;
-	padding-top: 1em;
-	max-width: 9.0625em; 
+	position: relative;
+	left: em(33px);
+	width: em(185px);
+	margin-top: em(40px);
 }
 
 .ingredients__single{
@@ -35,5 +36,9 @@
 
 .single__paprika{
 	background: url("../img/ingredients/ingredients__paprika.jpg") no-repeat center center;
+}
+
+.separator{
+	margin-bottom: em(25px);
 }
 

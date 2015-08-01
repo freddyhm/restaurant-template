@@ -3,11 +3,22 @@
 \*------------------------------------*/
 
 .social-list{
-	margin-top: 0;
-	width: 100px;
-	height: 100px;
+	width: 25%;
+	text-align: center;
+	@media screen and (min-width: $break-med){
+		float: right;
+		width: em(65px);
+		margin-right: em(150 - 106.047);
+	}
 }
 
 .social__item{
 	display: inline-block;
+	@include gallery(4);
+}
+
+.icon{
+	width: em(15px);
+	height: em(15px);
+	fill: $social-icon-color;
 }

@@ -1,47 +1,64 @@
-/* -----------------------------------------------
-  :: NAV
-  --------------------------------------------- */
-
-/* ------------
-  :: Mobile
-  ---------- */
 
 .nav{
+	font-family: $nav-font-style, sans-serif;
 	position: fixed;
+	z-index: 10;
 	top: 0;
 	right: 0;
 	@media screen and (min-width: $break-med){
 		position: absolute;
+		right: em(256px);
 	}
 }
 
 .nav__list{
-	width: 6.25em;
+	width: 9.25em;
+    text-align: center;
+    border: 2px solid #CC9900;
 	@media screen and (min-width: $break-med){
-		width: 37em;
+		width: em(650px);
+		border: none;
 	}
 }
 
 .nav__stack{
+	float: right;
 	display: block;
 	@media screen and (min-width: $break-med){
 		display: none;
 	}
 }
 
+.nav__link{
+	color: $nav-link-color;
+}
+
 .nav__container{
 	display: none;
 	clear: right;
-	background-color: #fff;
+	background-color: rgba(0, 0, 0, 0.8);
 	@media screen and (min-width: $break-med){
 		display: block;
 		background-color: transparent;
 	}
 }
 
+.nav__container--visible{
+	display: block;
+}
+
 .nav__item{
+	display: list-item;
 	height: 3.5em;
   	line-height: 3.5em;
+  	border-bottom: 2px solid #CC9900;
+  	&:last-of-type{
+  		border-bottom: none;
+  	}@media screen and (min-width: $break-med){
+		@include span(2);
+		display: inline;
+		border-bottom: none;
+  	}
 }
 
 .nav__stack__container{
@@ -50,10 +67,5 @@
 }
 
 .nav__stack__icon{
-	fill: #fff;
+	fill: $nav-stack-color;
 }
-
-.nav__item--selected{
- 	border-top: 2px solid #fff;
-}
-

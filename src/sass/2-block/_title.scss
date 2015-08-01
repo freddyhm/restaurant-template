@@ -6,6 +6,7 @@
 .title, 
 .subtitle{
  	text-align: center;
+ 	margin-bottom: em(10px);
 	letter-spacing: $normal-letter-spacing;
 	color: $title-color;
 }
@@ -25,10 +26,33 @@
 	margin-bottom: 3.125em;
 }
 
+/* :: ABOUT ------------ */
+
 .about__title{
-	@media screen and (min-width: $break-main-section){
+	@media screen and (min-width: $break-about-section){
 		color: $highlighted-title-color;
 	}
 }
 
+/* :: FORM ------------ */
 
+.hours__title, .location__title{
+	display: none;
+	color: $light-title-color;
+	@media screen and (min-width: $break-main-section){
+		display: block;
+	}
+}
+
+/* :: MENU ------------ */
+
+.menu__item__title{
+	font-size: em(28.81px);
+	color: $highlighted-title-color;
+}
+
+/* :: RESERVATION ------------ */
+
+.title__reservation{
+	font-family: $reservation-title-style;
+}

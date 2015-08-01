@@ -45,6 +45,11 @@
   line-height: $tall-line-height;
 }
 
+.medium-big{
+  font-size: $medium-big-font;
+  line-height: $normal-line-height;
+} 
+
 .medium{
   font-size: $medium-font;
   line-height: $normal-line-height;
@@ -69,6 +74,7 @@
 body {
   font-family: $body-font-style, sans-serif;
   font-size: 100%;
+  -webkit-font-smoothing: antialiased;
   background-color: $body-bg-color;
   color: $font-default-color;
 }
@@ -77,18 +83,24 @@ body {
   text-align: center;
   font-family: $text-font-style, sans-serif;
   color: $desc-color;
+  @media screen and (min-width: $break-main-section){
+     font-size: $tiny-font;
+  }
 }
 
-.description--light{
+.description--light{  
   color: $light-desc-color;
 }
 
 /* :: ABOUT ------------ */
 
 .about__description{
+  text-align: center;
+  font-family: $text-font-style, sans-serif;
   color: $light-desc-color;
-  @media screen and (min-width: $break-main-section){
-    @include container(20.25em);
+  @media screen and (min-width: $break-about-section){
+    @include container(23.25em);
+    font-size: $tiny-font;
     color: $desc-color;
   }
 }
@@ -97,9 +109,7 @@ body {
 
 .ingredient__description{
   color: $light-desc-color;
-  @media screen and (min-width: $break-main-section){
-    @include container(20.25em);
-  }
+  margin-bottom: em(60px);
 }
 
 /* :: MENU ------------ */
@@ -107,6 +117,8 @@ body {
 .menu__description{
   text-align: left;
   color: $desc-color;
+  margin-top: 0;
+  margin-bottom: 2em;
 }
 
 /* :: CONTACT ------------ */
@@ -116,4 +128,12 @@ body {
     font-size: $tiny-font;
     color: $light-desc-color;
   }
+}
+
+.review__description{
+  color: $light-desc-color;
+  font-size: $medium-font;
+  font-family: $review-font-style, sans-serif;
+  font-weight: $boldest;
+  line-height: 2;
 }

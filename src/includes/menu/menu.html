@@ -1,74 +1,76 @@
-<section class="section">
-	<h2 class="bigger title title--highlighted">Menu</h2>
-	<ul class="list menu">
-		<li class="list__item submenu__item">
-			<div class="submenu__content">
-			<h3 class="big title title--highlighted">Appetisers</h3>
-			<img class="media" src="img/module/module__separator--highlighted.png" alt="">
-			<ul class="list submenu__list">
-				@@include('menu-item.html', {"item__name": "Tzatsiki", 
-											"item__price" : "$3.99", 
-											"item__desc" : "Refreshing traditional cucumber and garlic yoghurt dip."})
-				@@include('menu-item.html', {"item__name": "Aubergine Salad", 
-											"item__price" : "$5.50", 
-											"item__desc" : "Pure eggplant, garlic, green pepper, and tomato dip."})
-				@@include('menu-item.html', {"item__name": "Aubergine Salad", 
-											"item__price" : "$5.50", 
-											"item__desc" : "Pure eggplant, garlic, green pepper, and tomato dip."})
-			</ul>
-			</div>			
-		</li>
-		<li class="list__item submenu__item">
-			<div class="submenu__content">
-			<h3 class="big title title--highlighted">Starters</h3>
-			<img class="media" src="img/module/module__separator--highlighted.png" alt="">
-			<ul class="list submenu__list">
-				@@include('menu-item.html', {"item__name": "Haloumi", 
-											"item__price" : "$3.99", 
-											"item__desc" : "Refreshing traditional cucumber and garlic yoghurt dip."})
-				@@include('menu-item.html', {"item__name": "Spinach Pie", 
-											"item__price" : "$5.50", 
-											"item__desc" : "Pure eggplant, garlic, green pepper, and tomato dip."})
-			</ul>
-			</div>
-		</li>
-		<li class="list__item submenu__item">
-			<div class="submenu__content">
-			<h3 class="big title title--highlighted">Salads</h3>
-			<img class="media" src="img/module/module__separator--highlighted.png" alt="">
-			<ul class="list submenu__list">
-				@@include('menu-item.html', {"item__name": "Olive Special", 
-											"item__price" : "$3.99", 
-											"item__desc" : "Refreshing traditional cucumber and garlic yoghurt dip."})
-				@@include('menu-item.html', {"item__name": "Greek Salad", 
-											"item__price" : "$5.50", 
-											"item__desc" : "Pure eggplant, garlic, green pepper, and tomato dip."})
-				@@include('menu-item.html', {"item__name": "Gusto Salad", 
-											"item__price" : "$5.50", 
-											"item__desc" : "Pure eggplant, garlic, green pepper, and tomato dip."})
-			</ul>
-			</div>
-		</li>
-		<li class="list__item submenu__item">
-			<div class="submenu__content">
-			<h3 class="big title title--highlighted">Main Dishes</h3>
-			<img class="media" src="img/module/module__separator--highlighted.png" alt="">
-			<ul class="list submenu__list">
-				@@include('menu-item.html', {"item__name": "Cornish Mackerel", 
-											"item__price" : "$3.99", 
-											"item__desc" : "Refreshing traditional cucumber and garlic yoghurt dip."})
-				@@include('menu-item.html', {"item__name": "Roast Lamb", 
-											"item__price" : "$5.50", 
-											"item__desc" : "Pure eggplant, garlic, green pepper, and tomato dip."})
-				@@include('menu-item.html', {"item__name": "Fried Chicken", 
-											"item__price" : "$5.25", 
-											"item__desc" : "Pure eggplant, garlic, green pepper, and tomato dip."})
+<div class="hex__pattern__wrapper">
+	<section class="section menu__section"> 
+		<h2 class="biggest title title--highlighted">Menu</h2>
+		<ul class="list menu">
+			<li class="list__item submenu__item">
+				<div class="submenu__content">
+				<h3 class="big title menu__item__title">Appetisers</h3>
+				<img class="media separator" src="img/module/module__separator--highlighted.png" alt="">
+				<ul class="list submenu__list">
+					@@include('menu-item.html', {"item__name": "Tzatsiki", 
+												"item__price" : "$3.99", 
+												"item__desc" : "Refreshing traditional cucumber and garlic yoghurt dip."})
+					@@include('menu-item.html', {"item__name": "Aubergine Salad", 
+												"item__price" : "$5.50", 
+												"item__desc" : "Pure eggplant, garlic, green pepper, and tomato dip."})
+					@@include('menu-item.html', {"item__name": "Aubergine Salad", 
+												"item__price" : "$5.50", 
+												"item__desc" : "Pure eggplant, garlic, green pepper, and tomato dip."})
+				</ul>
+				</div>			
+			</li>
+			<li class="list__item submenu__item">
+				<div class="submenu__content">
+				<h3 class="big title menu__item__title">Starters</h3>
+				<img class="media separator" src="img/module/module__separator--highlighted.png" alt="">
+				<ul class="list submenu__list">
+					@@include('menu-item.html', {"item__name": "Haloumi", 
+												"item__price" : "$3.99", 
+												"item__desc" : "Refreshing traditional cucumber and garlic yoghurt dip."})
+					@@include('menu-item.html', {"item__name": "Spinach Pie", 
+												"item__price" : "$5.50", 
+												"item__desc" : "Pure eggplant, garlic, green pepper, and tomato dip."})
+				</ul>
+				</div>
+			</li>
+			<li class="list__item submenu__item">
+				<div class="submenu__content">
+				<h3 class="big title menu__item__title">Salads</h3>
+				<img class="media separator" src="img/module/module__separator--highlighted.png" alt="">
+				<ul class="list submenu__list">
+					@@include('menu-item.html', {"item__name": "Olive Special", 
+												"item__price" : "$3.99", 
+												"item__desc" : "Refreshing traditional cucumber and garlic yoghurt dip."})
+					@@include('menu-item.html', {"item__name": "Greek Salad", 
+												"item__price" : "$5.50", 
+												"item__desc" : "Pure eggplant, garlic, green pepper, and tomato dip."})
+					@@include('menu-item.html', {"item__name": "Gusto Salad", 
+												"item__price" : "$5.50", 
+												"item__desc" : "Pure eggplant, garlic, green pepper, and tomato dip."})
+				</ul>
+				</div>
+			</li>
+			<li class="list__item submenu__item">
+				<div class="submenu__content">
+				<h3 class="big title menu__item__title">Main Dishes</h3>
+				<img class="media separator" src="img/module/module__separator--highlighted.png" alt="">
+				<ul class="list submenu__list">
+					@@include('menu-item.html', {"item__name": "Cornish Mackerel", 
+												"item__price" : "$3.99", 
+												"item__desc" : "Refreshing traditional cucumber and garlic yoghurt dip."})
+					@@include('menu-item.html', {"item__name": "Roast Lamb", 
+												"item__price" : "$5.50", 
+												"item__desc" : "Pure eggplant, garlic, green pepper, and tomato dip."})
+					@@include('menu-item.html', {"item__name": "Fried Chicken", 
+												"item__price" : "$5.25", 
+												"item__desc" : "Pure eggplant, garlic, green pepper, and tomato dip."})
 
-				@@include('menu-item.html', {"item__name": "Pastitsio", 
-											"item__price" : "$5.99", 
-											"item__desc" : "Refreshing traditional cucumber and garlic yoghurt dip."})
-			</ul>
-			</div>
-		</li>
-	</ul>
-</section>
+					@@include('menu-item.html', {"item__name": "Pastitsio", 
+												"item__price" : "$5.99", 
+												"item__desc" : "Refreshing traditional cucumber and garlic yoghurt dip."})
+				</ul>
+				</div>
+			</li>
+		</ul>
+	</section>
+</div>
