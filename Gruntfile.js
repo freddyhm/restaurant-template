@@ -145,7 +145,8 @@ module.exports = function(grunt) {
 		            port: 2222
 		          }
 		      }
-		  },buildcontrol: {
+		  },
+		  buildcontrol: {
 		    options: {
 		      dir: 'dist',
 		      commit: true,
@@ -158,7 +159,15 @@ module.exports = function(grunt) {
 		        branch: 'production'
 		      }
 		    }
-		  }
+		  },
+		  	shell: {
+		        deploy: {
+		            command: [
+		                'cd dist/',
+		                'git push live'
+		            ].join('&&')
+		        }
+		    }
 	});
 
 	grunt.loadNpmTasks('grunt-postcss');
@@ -173,11 +182,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-include-replace');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-shell');
 
 	
 	grunt.registerTask('dev-setup', ['sass', 'concat', 'includereplace', 'copy', 'uglify']);
 	grunt.registerTask('prod-setup', ['sass', 'postcss', 'concat', 'uglify', 'includereplace', 'copy']);
-	grunt.registerTask('deploy', ['sass', 'postcss', 'concat', 'uglify', 'includereplace', 'copy', 'ssh_deploy:production']);
+	grunt.registerTask('deploy', ['sass', 'postcss', 'concat', 'uglify', 'includereplace', 'copy', 'buildcontrol:production', 'shell:deploy']);
 
 	grunt.registerTask('default', ['watch']);
 };
