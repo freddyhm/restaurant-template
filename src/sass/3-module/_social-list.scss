@@ -7,18 +7,28 @@
 	text-align: center;
 	@media screen and (min-width: $break-med){
 		float: right;
+		position: relative;
+		right: 7.5em;
+		top: 0.25em;
+		margin-top: em(23px);
 		width: em(65px);
-		margin-right: em(150 - 106.047);
 	}
 }
 
 .social__item{
 	display: inline-block;
-	@include gallery(4);
+	margin-right: em(5px);
+	&:last-of-type{
+		margin-right: 0;
+	}
 }
 
 .icon{
 	width: em(15px);
 	height: em(15px);
 	fill: $social-icon-color;
+	&:hover{
+		fill: $nav-link-color-hover;
+	}
 }
+

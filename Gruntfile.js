@@ -10,9 +10,9 @@ module.exports = function(grunt) {
 		    },
 		    compress: {
 		        expand: true, 
-		        src: ['face-justin.jpg'], 
-		        cwd: 'src/img/testimonial/',
-		        dest: 'src/img/testimonial/'
+		        src: 'arc__pattern.jpg', 
+		        cwd: 'src/img/',
+		        dest: 'src/img/'
 		    }
     	},
 		responsive_images: {
@@ -21,16 +21,19 @@ module.exports = function(grunt) {
 	          engine: 'im',
 	          aspectRatio: false,
 	          sizes: [{
-	            width: 100,
+	            width: 221,
 	            suffix: '-sm'
+	          }, {
+	            width: 421,
+	            suffix: '-med'
 	          }
 	          ]
 	        },
 	        files: [{
 	          expand: true,
-	          src: ['face-justin.jpg'],
-	          cwd: 'src/img/testimonial/',
-	          dest: 'src/img/testimonial/'
+	          src: ['about__dish.png'],
+	          cwd: 'src/img/about/',
+	          dest: 'src/img/about/'
 	        }]
 	      }
 	    },
@@ -44,7 +47,7 @@ module.exports = function(grunt) {
 					livereload: true,
 					spawn: false
 				},
-				files: ['dist/**/*']
+				files: ['dist/**/*.html', 'dist/**/*.js', 'dist/**/*.css']
 			},
 			html: {
 		    	files: ['src/includes/**/*.html', 'index.html'],
@@ -77,10 +80,10 @@ module.exports = function(grunt) {
             } 
         },
 		sass: {
-	/*		options: {
+			options: {
 		         sourceMap: true,
 		         outputStyle: 'compressed'
-		    },*/
+		    },
 			dist: {
 				files: {
 					'dist/css/styles.min.css': 'src/sass/all.scss'
@@ -89,7 +92,7 @@ module.exports = function(grunt) {
 		},
 		copy: {
 			js:{
-				src: ['js/*.js', 'js/vendor/*.js'],
+				src: ['js/vendor/*.js'],
 				dest: 'dist',
 				expand: true,
 				cwd: 'src'
@@ -134,7 +137,7 @@ module.exports = function(grunt) {
 		          options: {
 	          		local_path: 'dist',
 	        		current_symlink: 'current',
-	        		deploy_path: '/home/fhm/public_html',
+	        		deploy_path: '/home/fhm/public_html/restaurant-template',
 		        	releases_to_keep: 1,
 		            host: 'freddyhm.com',
 		            username: '-',
@@ -157,9 +160,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 
-	grunt.registerTask('setup', ['sass', 'concat', 'includereplace', 'copy']);
-	grunt.registerTask('process-js', ['concat', 'copy:js']);
-	grunt.registerTask('prod-setup', ['sass', 'postcss', 'concat', 'uglify', 'includereplace', 'copy', '']);
+	
+	grunt.registerTask('dev-setup', ['sass', 'concat', 'includereplace', 'copy', 'uglify']);
+	grunt.registerTask('prod-setup', ['sass', 'postcss', 'concat', 'uglify', 'includereplace', 'copy']);
 	grunt.registerTask('deploy', ['sass', 'postcss', 'concat', 'uglify', 'includereplace', 'copy', 'ssh_deploy:production']);
 
 	grunt.registerTask('default', ['watch']);

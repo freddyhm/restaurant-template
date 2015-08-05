@@ -7,13 +7,6 @@
 	color: $link-color;
 	text-decoration: none;
 	&:hover{
-		color: black;
-	}
-}
-
-.text__link{
-	color: $text-link-color;
-	&:hover{
-		color: $text-link-color-hover;
+		color: $nav-link-color-hover;
 	}
 }

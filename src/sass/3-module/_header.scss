@@ -3,9 +3,17 @@
   --------------------------------------------- */
 
 
-.header{
-	background: url('../img/header/bg.jpg') no-repeat center center;
+.header{ 
+	background-image: url('../img/header/bg-480-sm.jpg');
+	background-repeat: no-repeat;
+	background-position: center center; 
 	background-size: cover; 
+	@media screen and (min-width: $break-med){
+		background-image: url('../img/header/bg-700-med.jpg');
+	}
+	@media screen and (min-width: $break-lrg){
+		background-image: url('../img/header/bg.jpg');
+	} 
 }
 
 .header__wrapper{
@@ -19,7 +27,7 @@
 
 .header__content{
 	@media screen and (min-width: $break-med){
-		@include container(em(710px));
+		@include container(em(668px));
 		margin-top: 7em;
 	}
 }
@@ -54,6 +62,11 @@
 	@include span(6);
 }
 
-.header__button--left{
+.header__button--left:hover{
+	background-color: $dark-button-hover-color;
+}
 
+.header__button--right:hover{
+	color: $black;
+	background-color: $light-button-hover-color;
 }

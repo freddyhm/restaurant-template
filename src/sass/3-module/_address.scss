@@ -7,10 +7,3 @@
 	text-align: center;
 	font-style: normal;
 }
-
-.footer__address{
-	margin: 1em;
-	@media screen and (min-width: $break-main-section){
-		margin-bottom: 0;
-	}
-}

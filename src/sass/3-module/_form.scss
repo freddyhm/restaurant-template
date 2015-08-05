@@ -14,10 +14,10 @@
 }
 
 .form__submit, .form__field, .form__label{
-	@include span(12);
+	width: 100%;	
 }
 
-.form__field, .form__details, .form__submit{
+.form__field, .form__details{
   	padding: em(3px);
 }
 
@@ -45,16 +45,16 @@
 	margin-bottom: 1em;
 }
 
-.submit__wrapper{
-	@include span(12);
-}
-
 .form__submit{
-	@include container(em(160px));
 	float: right;
-	font-size: em(12.8px);
-	margin-top: 20px;
-	color: #fff;
-  	&:hover{
+	margin: 0;
+	font-size: $tiny-font;
+	border: none;
+	color: $white;
+	&:hover{
+  		background-color: $form-submit-hover;
   	}
+	@media screen and (min-width:$break-lrg){
+		@include container(em(160px));
+	}
 }

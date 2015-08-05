@@ -5,7 +5,7 @@
 	z-index: 10;
 	top: 0;
 	right: 0;
-	@media screen and (min-width: $break-med){
+	@media screen and (min-width: $break-header-section){
 		position: absolute;
 		right: em(256px);
 	}
@@ -13,9 +13,11 @@
 
 .nav__list{
 	width: 9.25em;
+	margin-top: em(23px);
     text-align: center;
     border: 2px solid #CC9900;
-	@media screen and (min-width: $break-med){
+    border-right: none;
+	@media screen and (min-width: $break-header-section){
 		width: em(650px);
 		border: none;
 	}
@@ -24,7 +26,9 @@
 .nav__stack{
 	float: right;
 	display: block;
-	@media screen and (min-width: $break-med){
+	margin-right: 1em;
+	cursor: pointer;
+	@media screen and (min-width: $break-header-section){
 		display: none;
 	}
 }
@@ -37,7 +41,7 @@
 	display: none;
 	clear: right;
 	background-color: rgba(0, 0, 0, 0.8);
-	@media screen and (min-width: $break-med){
+	@media screen and (min-width: $break-header-section){
 		display: block;
 		background-color: transparent;
 	}
@@ -54,10 +58,14 @@
   	border-bottom: 2px solid #CC9900;
   	&:last-of-type{
   		border-bottom: none;
-  	}@media screen and (min-width: $break-med){
-		@include span(2);
+  	}
+  	@media screen and (min-width: $break-header-section){
 		display: inline;
+		margin-right: em(45px);
 		border-bottom: none;
+		&:last-of-type{
+			margin-right: 0;
+		}
   	}
 }
 

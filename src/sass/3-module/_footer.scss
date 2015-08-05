@@ -4,7 +4,6 @@
 */
 
 .footer{
-	
 	@include container($main-layout);
 	padding-bottom: 10em;
 	text-align: center;
@@ -43,11 +42,15 @@
 	}
 }
 
-.contact__separator, .contact__title, .contact__number{
+.contact__separator, .contact__title, .call__button{
 	display: block;
 	@media screen and (min-width: $break-main-section){
 		display: none;
 	}
+}
+
+.contact__title{
+	margin-top: 0; 
 }
 
 .info__separator{
@@ -62,5 +65,32 @@
 	margin: 0.5em;
 	@media screen and (min-width: $break-main-section){
 		margin: 0;
+	}
+}
+
+.footer__address{
+	margin: 1em;
+	@media screen and (min-width: $break-main-section){
+		margin-bottom: 0;
+	}
+}
+
+.footer__address__link{
+	color: $dark-address-link-color;
+	@media screen and (min-width: $break-main-section){
+		color: $light-address-link-color;
+	}
+}
+
+.call__button{
+	width: 100%;
+	display: block;
+	font-size: $tiny-font;
+	color: $light-button-text-color;
+	&:hover{
+		background-color: $call-button-hover-color;
+	}
+	@media screen and (min-width: $break-main-section){
+		display: none;
 	}
 }

@@ -3,12 +3,13 @@
 \*------------------------------------*/
 
 .button{
-	opacity: 0.8;
+	text-decoration: none;
 	height: 3.5em;
+	line-height: 3.5em;
+	text-align: center;
 	font-size: 0.7175rem;
 	font-family: $button-font-style, sans-serif;
 	text-transform: uppercase;
-	border: none;
 	@media screen and (min-width: $break-sm){
 		.button{
 			width: 9.375em;
@@ -30,12 +31,4 @@
 .button--highlighted{
 	margin: 1.5em auto;
 	background-color: $highlighted-button-color;
-}
-
-.call__button{
-	width: 100%;
-	display: block;
-	@media screen and (min-width: $break-main-section){
-		display: none;
-	}
 }
