@@ -140,11 +140,24 @@ module.exports = function(grunt) {
 	        		deploy_path: '/home/fhm/public_html/restaurant-template',
 		        	releases_to_keep: 1,
 		            host: 'freddyhm.com',
-		            username: '-',
-		            password: '-',
+		            username: 'fhm',
+		            password: '--',
 		            port: 2222
 		          }
 		      }
+		  },buildcontrol: {
+		    options: {
+		      dir: 'dist',
+		      commit: true,
+		      push: true,
+		      message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+		    },
+		    production: {
+		      options: {
+		        remote: 'git@github.com:freddyhm/restaurant-template.git',
+		        branch: 'production'
+		      }
+		    }
 		  }
 	});
 
@@ -155,6 +168,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-responsive-images');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-ssh-deploy');
+	grunt.loadNpmTasks('grunt-build-control');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-include-replace');
 	grunt.loadNpmTasks('grunt-contrib-copy');

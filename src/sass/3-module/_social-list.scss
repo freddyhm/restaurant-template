@@ -3,7 +3,8 @@
 \*------------------------------------*/
 
 .social-list{
-	width: 25%;
+	@include susy-clearfix;
+	float: left;
 	text-align: center;
 	@media screen and (min-width: $break-med){
 		float: right;
