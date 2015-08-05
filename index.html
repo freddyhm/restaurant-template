@@ -1,0 +1,351 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Restaurant Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:700|Lato|Yeseva+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/styles.min.css">
+    </head>
+    <body>
+        <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <symbol id="icon-facebook" viewBox="0 0 1024 1024">
+            <title>facebook</title>
+            <path class="path1" d="M672 192c-88.366 0-160 71.634-160 160v96h-128v128h128v448h128v-448h144l32-128h-176v-96c0-17.672 14.326-32 32-32h160v-128h-160z"></path>
+        </symbol>
+        <symbol id="icon-twitter" viewBox="0 0 1024 1024">
+            <title>twitter</title>
+            <path class="path1" d="M1024 194.418c-37.676 16.708-78.164 28.002-120.66 33.080 43.372-26 76.686-67.17 92.372-116.23-40.596 24.078-85.556 41.56-133.41 50.98-38.32-40.83-92.922-66.34-153.346-66.34-116.022 0-210.088 94.058-210.088 210.078 0 16.466 1.858 32.5 5.44 47.878-174.6-8.764-329.402-92.4-433.018-219.506-18.084 31.028-28.446 67.116-28.446 105.618 0 72.888 37.088 137.192 93.46 174.866-34.438-1.092-66.832-10.542-95.154-26.278-0.020 0.876-0.020 1.756-0.020 2.642 0 101.788 72.418 186.696 168.522 206-17.626 4.8-36.188 7.372-55.348 7.372-13.538 0-26.698-1.32-39.528-3.772 26.736 83.46 104.32 144.206 196.252 145.896-71.9 56.35-162.486 89.934-260.916 89.934-16.958 0-33.68-0.994-50.116-2.94 92.972 59.61 203.402 94.394 322.042 94.394 386.422 0 597.736-320.124 597.736-597.744 0-9.108-0.206-18.168-0.61-27.18 41.056-29.62 76.672-66.62 104.836-108.748z"></path>
+        </symbol>
+        <symbol id="icon-youtube3" viewBox="0 0 1024 1024">
+            <title>youtube3</title>
+            <path class="path1" d="M293.188 0l-69.188 137.234-69.188-137.234h-88.248l124.71 217.314 0.726-0.43v167.116h64v-167.116l0.726 0.43 124.71-217.314z"></path>
+            <path class="path2" d="M480 128c17.346 0 32 14.654 32 32v128c0 17.346-14.654 32-32 32s-32-14.654-32-32v-128c0-17.346 14.654-32 32-32zM480 64c-52.8 0-96 43.2-96 96v128c0 52.8 43.2 96 96 96s96-43.2 96-96v-128c0-52.8-43.2-96-96-96v0z"></path>
+            <path class="path3" d="M768 64v251.968c-27.922 23.288-64 37.332-64-45.634v-206.334h-64v219.324h0.096c0.986 52.91 12.142 148.168 127.904 70.712v29.964h64v-320h-64z"></path>
+            <path class="path4" d="M864 704c-17.644 0-32 14.356-32 32v32h64v-32c0-17.644-14.356-32-32-32z"></path>
+            <path class="path5" d="M576 736v168c21.666 21.666 64 24 64-8s0-118 0-150-32-42-64-10z"></path>
+            <path class="path6" d="M1018.766 581.54c-2.792-36.862-16.046-66.942-39.778-90.244-23.726-23.298-54.080-35.994-91.068-38.080-69.784-3.478-229.452-5.216-369.716-5.216-140.266 0-311.294 1.738-381.078 5.216-36.986 2.086-67.342 14.782-91.068 38.080-23.728 23.302-36.988 53.382-39.778 90.244-4.188 75.116-6.28 102.352-6.28 139.91 0 37.56 2.092 93.894 6.28 169.012 2.792 36.862 16.050 66.944 39.778 90.244 23.726 23.298 54.082 35.992 91.068 38.080 69.782 3.476 240.81 5.214 381.078 5.214 140.266 0 299.934-1.738 369.716-5.214 36.988-2.088 67.342-14.782 91.068-38.080 23.73-23.3 36.986-53.382 39.778-90.244 3.49-62.598 5.234-118.934 5.234-169.012 0-50.076-1.744-77.314-5.234-139.91zM192 960h-64v-320h-64v-64h192v64h-64v320zM448 960h-64v-29.962c-121.666 68.294-126.918 2.198-127.904-50.712h-0.096v-175.326h64v176.334c0 38.666 36.078 34.924 64 11.634v-187.968h64v256zM704 895.086c0 66.892-68.504 86.402-128 34.39v30.524h-64v-384h64v104c64-64 128-40 128 24s0 121.172 0 191.086zM960 768v32h-128v64c0 17.644 14.356 32 32 32s32-14.356 32-32v-32h64v32c0 52.934-43.066 96-96 96s-96-43.066-96-96v-128c0-52.934 43.066-96 96-96s96 43.066 96 96v32z"></path>
+        </symbol>
+    </defs>
+</svg>
+        <div class="link__skip-all"><a href="#main">Skip to main content</a></div>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="header">
+	<div class="header__wrapper">
+		<ul class="list social-list header__social-list">
+	<li class="list__item social__item"><a href="link" class="link social__link"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
+	<li class="list__item social__item"><a href="link" class="link social__link"><svg class="icon icon-youtube3"><use xlink:href="#icon-youtube3"></use></svg></a></li>
+	<li class="list__item social__item"><a href="link" class="link social__link"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></li>
+</ul>
+		<img class="media logo" src="img/header/logo.png" width="100" height="60" alt="logo">
+		<div class="header__content">
+			<h1 class="big title header__title">the right ingredients for the right food</h1>
+			<img class="media" src="img/separator.png" width="150" height="30" alt="">	
+			<div class="cta">
+			 	<a href="#reservation" class="button button--dark header__button--left">Book a table</a>
+			 	<a href="#menu" class="button button--light header__button--right">See the menu</a>
+			 </div> 
+		</div>
+		<nav class="nav">
+	<a class="nav__stack" id="nav-stack">
+	  <svg class="nav__stack__container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	    <path class="nav__stack__icon" d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path>
+	  </svg>
+	</a>
+	<div class="nav__container" id="nav-container">
+		<ul class="list nav__list">
+			<li class="list__item nav__item"><a href="#" class="link nav__link">Home</a></li>
+			<li class="list__item nav__item"><a href="#about" class="link nav__link">About</a></li>
+			<li class="list__item nav__item"><a href="#ingredients" class="link nav__link">Ingredients</a></li>
+			<li class="list__item nav__item"><a href="#menu" class="link nav__link">Menu</a></li>
+			<li class="list__item nav__item"><a href="#reviews" class="link nav__link">Reviews</a></li>
+			<li class="list__item nav__item"><a href="#reservation" class="link nav__link">Reservations</a></li>
+		</ul>
+	</div>
+</nav>
+
+	</div>
+</header>
+        <main id="main" tabindex="-1">
+           <div class="arc__pattern__wrapper">
+	<div class="section__wrapper dish__wrapper">
+		<div class="about__overlay">
+			<section id="about" class="section about__section">
+				<div class="section__content about__content">
+					<h2 class="title title--light about__title">Just the right food</h2>
+					<img class="media separator" src="img/module/module__separator--highlighted.png" alt="" >
+					<p class="medium about__description">If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p> 
+					<img class="media face" src="img/about/about__chef-185-lrg.png" alt="Chef Placing Food"> 
+				</div>
+			</section> 
+		</div> 
+	</div>
+</div>
+           <div class="section__wrapper ingredient__wrapper">
+	<div class="overlay">
+		<section id="ingredients" class="section ingredient__section">
+			<div class="section__content ingredients__content">
+				<h2 class="title title--light ingredients__title">Fine Ingredients</h2>
+				<img class="media separator" src="img/module/module__separator--light.png" alt="" >
+				<p class="medium description ingredient__description">If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p> 
+				<ul class="list ingredients__list">
+					<li class="list__item ingredients__item">
+						<span class="media ingredients__single single__wheat"></span>
+					</li>
+					<li class="list__item ingredients__item">
+						<span class="media ingredients__single single__bread"></span>
+					</li>
+					<li class="list__item ingredients__item">
+						<span class="media ingredients__single single__paprika"></span>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+</div>
+           <div class="hex__pattern__wrapper">
+	<section id="menu" class="section menu__section"> 
+		<h2 class="biggest title title--highlighted">Menu</h2>
+		<ul class="list menu">
+			<li class="list__item submenu__item">
+				<div class="submenu__content">
+				<h3 class="big title menu__item__title">Appetisers</h3>
+				<img class="media separator" src="img/module/module__separator--highlighted.png" alt="">
+				<ul class="list submenu__list">
+					<li class="list__item menu-item">
+	<div class="menu-item__title">
+		<span class="medium title--highlighted menu-item__name">Tzatsiki</span>
+		<span class="medium title--highlighted menu-item__price">$3.99</span>
+	</div>
+	<hr class="bar">
+	<p class="medium description menu__description">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+</li>
+					<li class="list__item menu-item">
+	<div class="menu-item__title">
+		<span class="medium title--highlighted menu-item__name">Aubergine Salad</span>
+		<span class="medium title--highlighted menu-item__price">$5.50</span>
+	</div>
+	<hr class="bar">
+	<p class="medium description menu__description">Pure eggplant, garlic, green pepper, and tomato dip.</p>
+</li>
+					<li class="list__item menu-item">
+	<div class="menu-item__title">
+		<span class="medium title--highlighted menu-item__name">Aubergine Salad</span>
+		<span class="medium title--highlighted menu-item__price">$5.50</span>
+	</div>
+	<hr class="bar">
+	<p class="medium description menu__description">Pure eggplant, garlic, green pepper, and tomato dip.</p>
+</li>
+				</ul>
+				</div>			
+			</li>
+			<li class="list__item submenu__item">
+				<div class="submenu__content">
+				<h3 class="big title menu__item__title">Starters</h3>
+				<img class="media separator" src="img/module/module__separator--highlighted.png" alt="">
+				<ul class="list submenu__list">
+					<li class="list__item menu-item">
+	<div class="menu-item__title">
+		<span class="medium title--highlighted menu-item__name">Haloumi</span>
+		<span class="medium title--highlighted menu-item__price">$3.99</span>
+	</div>
+	<hr class="bar">
+	<p class="medium description menu__description">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+</li>
+					<li class="list__item menu-item">
+	<div class="menu-item__title">
+		<span class="medium title--highlighted menu-item__name">Spinach Pie</span>
+		<span class="medium title--highlighted menu-item__price">$5.50</span>
+	</div>
+	<hr class="bar">
+	<p class="medium description menu__description">Pure eggplant, garlic, green pepper, and tomato dip.</p>
+</li>
+				</ul>
+				</div>
+			</li>
+			<li class="list__item submenu__item">
+				<div class="submenu__content">
+				<h3 class="big title menu__item__title">Salads</h3>
+				<img class="media separator" src="img/module/module__separator--highlighted.png" alt="">
+				<ul class="list submenu__list">
+					<li class="list__item menu-item">
+	<div class="menu-item__title">
+		<span class="medium title--highlighted menu-item__name">Olive Special</span>
+		<span class="medium title--highlighted menu-item__price">$3.99</span>
+	</div>
+	<hr class="bar">
+	<p class="medium description menu__description">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+</li>
+					<li class="list__item menu-item">
+	<div class="menu-item__title">
+		<span class="medium title--highlighted menu-item__name">Greek Salad</span>
+		<span class="medium title--highlighted menu-item__price">$5.50</span>
+	</div>
+	<hr class="bar">
+	<p class="medium description menu__description">Pure eggplant, garlic, green pepper, and tomato dip.</p>
+</li>
+					<li class="list__item menu-item">
+	<div class="menu-item__title">
+		<span class="medium title--highlighted menu-item__name">Gusto Salad</span>
+		<span class="medium title--highlighted menu-item__price">$5.50</span>
+	</div>
+	<hr class="bar">
+	<p class="medium description menu__description">Pure eggplant, garlic, green pepper, and tomato dip.</p>
+</li>
+				</ul>
+				</div>
+			</li>
+			<li class="list__item submenu__item">
+				<div class="submenu__content">
+				<h3 class="big title menu__item__title">Main Dishes</h3>
+				<img class="media separator" src="img/module/module__separator--highlighted.png" alt="">
+				<ul class="list submenu__list">
+					<li class="list__item menu-item">
+	<div class="menu-item__title">
+		<span class="medium title--highlighted menu-item__name">Cornish Mackerel</span>
+		<span class="medium title--highlighted menu-item__price">$3.99</span>
+	</div>
+	<hr class="bar">
+	<p class="medium description menu__description">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+</li>
+					<li class="list__item menu-item">
+	<div class="menu-item__title">
+		<span class="medium title--highlighted menu-item__name">Roast Lamb</span>
+		<span class="medium title--highlighted menu-item__price">$5.50</span>
+	</div>
+	<hr class="bar">
+	<p class="medium description menu__description">Pure eggplant, garlic, green pepper, and tomato dip.</p>
+</li>
+					<li class="list__item menu-item">
+	<div class="menu-item__title">
+		<span class="medium title--highlighted menu-item__name">Fried Chicken</span>
+		<span class="medium title--highlighted menu-item__price">$5.25</span>
+	</div>
+	<hr class="bar">
+	<p class="medium description menu__description">Pure eggplant, garlic, green pepper, and tomato dip.</p>
+</li>
+
+					<li class="list__item menu-item">
+	<div class="menu-item__title">
+		<span class="medium title--highlighted menu-item__name">Pastitsio</span>
+		<span class="medium title--highlighted menu-item__price">$5.99</span>
+	</div>
+	<hr class="bar">
+	<p class="medium description menu__description">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+</li>
+				</ul>
+				</div>
+			</li>
+		</ul>
+	</section>
+</div>
+           <div class="section__wrapper review__wrapper">
+	<div class="overlay">
+		<section id="reviews" class="section">
+			<div class="review__content">
+				<h2 class="bigger title title--light">Guest Reviews</h2>
+				<img class="media separator" src="img/module/module__separator--light.png" alt="" >
+				<blockquote class="quote">
+					<p class="medium description review__description"><span class="quote__mark">“</span>If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
+					<footer class="quote__footer">
+						- <cite class="tiny quote__source">food inc, New York</cite>
+					</footer>
+				</blockquote>
+			</div>
+		</section>
+	</div>
+</div>
+           <div class="arc__pattern__wrapper">
+	<section id="reservation" class="section reservation__section">
+		<div class="banner__wrapper">
+			<figure class="figure banner--left">
+				<img src="img/reservation/reservation__beef.jpg" alt="">
+			</figure>
+			<figure class="figure banner--right">
+				<img src="img/reservation/reservation__granola-yogurt.jpg" alt="">
+			</figure>
+		</div>
+		<form class="form" method="POST" action="#">
+			<h2 class="title title--highlighted title__reservation">Reservations</h2>
+			<img class="media separator" src="img/module/module__separator--highlighted.png" alt="">
+			<p class="medium description description--dark">
+				If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers coming back for more. Perfect materials and freshly baked food. 
+			</p>
+			<div class="form__fields field__name">
+				<label class="form__label" for="guest-name">Name</label>
+				<input class="form__field" id="guest-name" type="text" placeholder="your name*">
+			</div>
+			<div class="form__fields field__email">
+				<label class="form__label" for="email">Email</label>
+				<input class="form__field"  id="email" type="email" placeholder="your email*">
+			</div>
+			<div class="form__fields field__date">
+				<label class="form__label" for="date">Date</label>
+				<input class="form__field" id="date" type="date">
+			</div>
+			<div class="form__fields field__party-number">
+				<label class="form__label" for="party-number">Party Number</label>
+				<input class="form__field" id="party-number" type="number" placeholder="party number">
+			</div>			
+			<div class="submit__wrapper">
+				<input class="button button--highlighted form__submit" type="submit" value="Book Now!">
+			</div>		
+		</form>
+	</section>
+</div>
+        </main>
+        <div class="arc__pattern__wrapper">
+<footer class="footer">
+	<div class="footer__content"> 
+		<h2 class="title title--highlighted contact__title">Get In touch</h2>
+		<img class="media contact__separator" src="img/module/module__separator--highlighted.png" alt="">
+		<div class="footer__info">
+			<article class="info__blocks info__about">
+				<h3 class="medium title title--light">About Us</h3>
+				<img class="media info__separator" src="img/module/module__separator--light.png" alt="" >
+				<p class="small description contact__description">
+					Lambda's new and expanded Chelsea location represents a truly authentic Greek patisserie, featuring breakfasts of fresh croissants and steaming bowls of café. Lamda the best restaurant in town
+				</p> 
+			</article>
+			<article class="info__blocks info__hours">
+				<h3 class="medium title hours__title">Opening Hours</h3>
+				<img class="media info__separator" src="img/module/module__separator--light.png" alt="" >
+				<p class="small description contact__description">
+					<span class="hours__time"><strong>Mon-Thu: </strong><time datetime="07:00">7am</time> - <time datetime="20:00">8pm</time></span>
+					<br>
+					<span class="hours__time"><strong>Fri-Sun: </strong> 7am - 10pm</span>
+				</p>
+			</article>
+			<article class="info__blocks info__locations">
+				<h3 class="medium title location__title">Our Locations</h3>
+				<img class="media info__separator" src="img/module/module__separator--light.png" alt="" >
+				<div class="medium-big description contact__description">
+					<address class="address footer__address"><a class="link footer__address__link" href="http://maps.google.com/" target="_blank">19th Paradise Street Sitia</a></address>
+					<address class="address footer__address"><a class="link footer__address__link" href="http://maps.google.com/" target="_blank">128 Meserole Avenue</a></address>
+				</div> 	
+			</article>	
+		</div>
+		<a href="tel:555-555-555" class="button button--highlighted call__button">CALL 555-555-555</a>
+	</div>
+</footer>
+</div>
+        <script src="js/custom.min.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
