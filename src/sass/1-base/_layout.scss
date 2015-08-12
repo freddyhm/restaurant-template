@@ -1,9 +1,9 @@
 /**
-* @name         Layout    
+* @name         Layout
 * @requires     Susy
 */
 
-// :: GRID ------------  
+// :: GRID ------------
 
 @import "../../../bower_components/susy/sass/susy";
 
@@ -22,6 +22,10 @@ $susy: (
 	padding: 4em 0;
 	position: relative;
 	@include container($main-layout);
+
+	@media screen and (min-width: $break-x-lrg){
+		@include container($x-full-layout);
+	}
 }
 
 .section__wrapper{
@@ -34,14 +38,14 @@ $susy: (
 .overlay{
     background-color: rgba(0,0,0,0.5);
     @media screen and (min-width: $break-main-section){
-		background-color: rgba(0,0,0,0); 	
+		background-color: rgba(0,0,0,0);
 	}
 }
 
 /* :: ABOUT ------------ */
 
-.dish__wrapper{ 
-	
+.dish__wrapper{
+
 	background-image: url("../img/about/about__dish-221-sm.png");
 	background-size: 20em;
 
@@ -59,7 +63,7 @@ $susy: (
 }
 
 .arc__pattern__wrapper{
-	background-image: url("../img/arc__pattern.png"); 
+	background-image: url("../img/arc__pattern.png");
 }
 
 .about__content{
@@ -71,7 +75,7 @@ $susy: (
 .about__overlay{
 	background-color: rgba(0,0,0,0.5);
 	@media screen and (min-width: $break-about-section){
-		background-color: rgba(0,0,0,0); 	
+		background-color: rgba(0,0,0,0);
 	}
 }
 
@@ -93,9 +97,9 @@ $susy: (
 	@media screen and (min-width: $break-med){
 		background-image: url('../img/ingredients/ingredients__bg-700-med.jpg');
 	}
-	@media screen and (min-width: $break-lrg){ 
+	@media screen and (min-width: $break-lrg){
 		background-image: url('../img/ingredients/ingredients__bg.jpg');
-	} 
+	}
 }
 
 .ingredients__content{
@@ -103,7 +107,7 @@ $susy: (
 		@include span(6 last);
 		width: 30em;
 		background-color: rgba(0, 0, 0, 0.5);
-		padding-top: calc(1em + 29.08px); 
+		padding-top: calc(1em + 29.08px);
 		padding-bottom: em(65px);
 		padding-left: em(65px);
 		padding-right: em(65px);
@@ -125,9 +129,9 @@ $susy: (
 	@media screen and (min-width: $break-med){
 		background-image: url("../img/reviews/reviews__dish-700-med.jpg");
 	}
-	@media screen and (min-width: $break-lrg){ 
+	@media screen and (min-width: $break-lrg){
 		background-image: url("../img/reviews/reviews__dish.jpg");
-	} 
+	}
 }
 
 .review__content{

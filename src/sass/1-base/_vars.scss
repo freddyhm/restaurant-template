@@ -39,7 +39,7 @@ $social-icon-color: $buddha-gold;
 $bar-color: $buddha-gold;
 
 // Links
-$link-color: $white-haze; 
+$link-color: $white-haze;
 $text-link-color: $horizon;
 $nav-link-color: $white-haze;
 $nav-link-color-hover: $selective-yellow;
@@ -100,7 +100,7 @@ $button-font-style: "Lato";
 $gigantic-font: 6.875rem;
 $huge-font: 4.250rem;
 $larger-font: 3.625rem;
-$large-font: 2.625rem; 
+$large-font: 2.625rem;
 $biggest-font: 2rem;
 $bigger-font: 1.6rem;
 $big-font: 1.4rem;
@@ -137,6 +137,8 @@ $main-layout: 80%;
 $medium-layout: 85%;
 $wide-layout: 90%;
 $full-layout: 100%;
+$x-full-layout: 1000px;
+$x-full-header-layout: 1100px;
 
 // Specific
 $header-layout-width: 21.875rem;
@@ -147,10 +149,11 @@ $ingredient-layout-width: 18rem;
 // General
 $break-sm: 480px;
 $break-med: 640px;
-$break-lrg: 960px; 
+$break-lrg: 960px;
+$break-x-lrg: 1280px;
 
 // Specific
-$break-main-section: 700px; 
+$break-main-section: 700px;
 $break-about-section: 900px;
 $break-menu-section: 900px;
 $break-header-section: 1070px;

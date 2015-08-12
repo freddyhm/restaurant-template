@@ -1,40 +1,13 @@
-Deploy
-Optimize:
-	-Run pagespeed
-
-(optional) 
+(optional)
 ------------------------
 Verify HTML syntax
-Header buttons
+Make margins the same for both logo and nav stack in header
 Reservation button
 Special styling for menu
-Tweak social links so 
-Add highlight outline to form
 Add logos at the bottom of footer
 Quote Mark
 Clean CSS & HTML
-Semantic / Accessibility:
-	-alt tags
-	-skip links
+Semantic / Accessibility - alt tags + super-fish
 gradients
-resize bottom images 
+resize bottom images
 
-
-
-DONE
---------------------
-Proper Padding, Spacing, Font Sizes for Mobile & Desktop
-Proper Sizing!!!!
-Font Styles
-Nav - Mobile & Desktop
-Get In Touch Section
-Address
--remove all js files
--concat & minify
--autoprefix
-Nav
-Links
--responsive image sizes
--crunch pics
-Button Links
-Effed up background

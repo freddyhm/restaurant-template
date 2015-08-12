@@ -3,12 +3,12 @@
 	font-family: $nav-font-style, sans-serif;
 	position: fixed;
 	z-index: 10;
-	top: 0;
+	top: 15px;
 	right: 0;
 	@media screen and (min-width: $break-header-section){
-		position: absolute;
+		position: static;
+		float: right;
 		width: 51em;
-    	margin-right: 52px;
 	}
 }
 
