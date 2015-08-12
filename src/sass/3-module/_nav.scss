@@ -7,7 +7,8 @@
 	right: 0;
 	@media screen and (min-width: $break-header-section){
 		position: absolute;
-		right: em(256px);
+		width: 51em;
+    	margin-right: 52px;
 	}
 }
 
@@ -20,6 +21,7 @@
 	@media screen and (min-width: $break-header-section){
 		width: em(650px);
 		border: none;
+		float: left;
 	}
 }
 
@@ -72,8 +74,13 @@
 .nav__stack__container{
 	width: 3em;
 	height: 3em;
+
+	&:hover > .nav__stack__icon{
+		fill: $form-submit-hover;
+	}
 }
 
 .nav__stack__icon{
 	fill: $nav-stack-color;
+
 }

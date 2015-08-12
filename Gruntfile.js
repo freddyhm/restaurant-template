@@ -9,8 +9,8 @@ module.exports = function(grunt) {
 		        stopOnImageError: true
 		    },
 		    compress: {
-		        expand: true, 
-		        src: 'arc__pattern.jpg', 
+		        expand: true,
+		        src: 'arc__pattern.jpg',
 		        cwd: 'src/img/',
 		        dest: 'src/img/'
 		    }
@@ -66,6 +66,16 @@ module.exports = function(grunt) {
 				tasks: ['copy:img']
 			}
 		},
+		express:{
+  			all:{
+  				options:{
+  					port:3000,
+  					hostname:'localhost',
+  					bases:['dist'],
+  					livereload:true
+  				}
+  			}
+  		},
 		postcss: {
             options: {
                 map: true,
@@ -76,8 +86,8 @@ module.exports = function(grunt) {
                 ]
             },
             dist: {
-               	src: 'dist/css/styles.min.css'	
-            } 
+               	src: 'dist/css/styles.min.css'
+            }
         },
 		sass: {
 			options: {
@@ -132,21 +142,7 @@ module.exports = function(grunt) {
 		    	dest: 'dist/'
 		  	}
 		},
-		  environments: {
-		      production: {
-		          options: {
-	          		local_path: 'dist',
-	        		current_symlink: 'current',
-	        		deploy_path: '/home/fhm/public_html/restaurant-template',
-		        	releases_to_keep: 1,
-		            host: 'freddyhm.com',
-		            username: 'fhm',
-		            password: '--',
-		            port: 2222
-		          }
-		      }
-		  },
-		  buildcontrol: {
+		buildcontrol: {
 		    options: {
 		      dir: 'dist',
 		      commit: true,
@@ -159,15 +155,15 @@ module.exports = function(grunt) {
 		        branch: 'production'
 		      }
 		    }
-		  },
-		  	shell: {
-		        deploy: {
-		            command: [
-		                'cd dist/',
-		                'git push live'
-		            ].join('&&')
-		        }
-		    }
+		},
+	  	shell: {
+	        deploy: {
+	            command: [
+	                'cd dist/',
+	                'git push fhm@freddyhm.com:www/restaurant-template'
+	            ].join('&&')
+	        }
+	    }
 	});
 
 	grunt.loadNpmTasks('grunt-postcss');
@@ -182,12 +178,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-include-replace');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-express');
 	grunt.loadNpmTasks('grunt-shell');
 
-	
 	grunt.registerTask('dev-setup', ['sass', 'concat', 'includereplace', 'copy', 'uglify']);
 	grunt.registerTask('prod-setup', ['sass', 'postcss', 'concat', 'uglify', 'includereplace', 'copy']);
 	grunt.registerTask('deploy', ['sass', 'postcss', 'concat', 'uglify', 'includereplace', 'copy', 'buildcontrol:production', 'shell:deploy']);
-
-	grunt.registerTask('default', ['watch']);
+	grunt.registerTask('default', ['express', 'watch']);
 };

@@ -1,5 +1,5 @@
 /**
-* @name         Form    
+* @name         Form
 * @requires     _layout.scss, _vars.scss
 */
 
@@ -14,16 +14,33 @@
 }
 
 .form__submit, .form__field, .form__label{
-	width: 100%;	
+	width: 100%;
 }
 
 .form__field, .form__details{
-  	padding: em(3px);
+  	padding: em(5px);
 }
 
-.form__field::-webkit-input-placeholder {
-	font-size: em(12.8px);
+.form__field{
+	font-size: em(14.8px);
    	font-style: italic;
+   	height: em(40px);
+   	border: 1px solid $bar-color;
+   	&:focus{
+   		outline: none;
+		border: 2px solid $form-submit-hover;
+   	}
+}
+
+.field__date{
+	height: em(38px);
+}
+
+input::-webkit-datetime-edit-text, /* this makes the slashes in dd/mm/yyyy grey */
+input::-webkit-datetime-edit-day-field[aria-valuetext=blank],
+input::-webkit-datetime-edit-month-field[aria-valuetext=blank],
+input::-webkit-datetime-edit-year-field[aria-valuetext=blank] {
+  	color: #AAAAAA;
 }
 
 .form__fields{
@@ -34,7 +51,10 @@
 	@media screen and (min-width:$break-lrg){
 		@include span(6);
 	}
-}	
+	&:focus{
+		margin-bottom: 0;
+	}
+}
 
 .form__label{
 	font-size: $small-font;

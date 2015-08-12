@@ -1,0 +1,40 @@
+Deploy
+Optimize:
+	-Run pagespeed
+
+(optional) 
+------------------------
+Verify HTML syntax
+Header buttons
+Reservation button
+Special styling for menu
+Tweak social links so 
+Add highlight outline to form
+Add logos at the bottom of footer
+Quote Mark
+Clean CSS & HTML
+Semantic / Accessibility:
+	-alt tags
+	-skip links
+gradients
+resize bottom images 
+
+
+
+DONE
+--------------------
+Proper Padding, Spacing, Font Sizes for Mobile & Desktop
+Proper Sizing!!!!
+Font Styles
+Nav - Mobile & Desktop
+Get In Touch Section
+Address
+-remove all js files
+-concat & minify
+-autoprefix
+Nav
+Links
+-responsive image sizes
+-crunch pics
+Button Links
+Effed up background
