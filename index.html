@@ -40,20 +40,9 @@
         <![endif]-->
         <header class="header">
 	<div class="header__wrapper">
-		<ul class="list social-list header__social-list">
-	<li class="list__item social__item"><a href="link" class="link social__link"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
-	<li class="list__item social__item"><a href="link" class="link social__link"><svg class="icon icon-youtube3"><use xlink:href="#icon-youtube3"></use></svg></a></li>
-	<li class="list__item social__item"><a href="link" class="link social__link"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></li>
-</ul>
-		<img class="media logo" src="img/header/logo.png" width="100" height="60" alt="logo">
-		<div class="header__content">
-			<h1 class="big title header__title">the right ingredients for the right food</h1>
-			<img class="media" src="img/separator.png" width="150" height="30" alt="">	
-			<div class="cta">
-			 	<a href="#reservation" class="button button--dark header__button--left">Book a table</a>
-			 	<a href="#menu" class="button button--light header__button--right">See the menu</a>
-			 </div> 
-		</div>
+		<a href="#">
+			<img class="media logo" src="img/header/logo.png" width="100" height="60" alt="logo">
+		</a>
 		<nav class="nav">
 	<a class="nav__stack" id="nav-stack">
 	  <svg class="nav__stack__container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -69,8 +58,22 @@
 			<li class="list__item nav__item"><a href="#reviews" class="link nav__link">Reviews</a></li>
 			<li class="list__item nav__item"><a href="#reservation" class="link nav__link">Reservations</a></li>
 		</ul>
+		<ul class="list nav__list social-list">
+	<li class="list__item social__item"><a href="link" class="link social__link"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
+	<li class="list__item social__item"><a href="link" class="link social__link"><svg class="icon icon-youtube3"><use xlink:href="#icon-youtube3"></use></svg></a></li>
+	<li class="list__item social__item"><a href="link" class="link social__link"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></li>
+</ul>
 	</div>
 </nav>
+
+		<div class="header__content">
+			<h1 class="big title header__title">the right ingredients for the right food</h1>
+			<img class="media" src="img/separator.png" width="150" height="30" alt="">
+			<div class="cta">
+			 	<a href="#reservation" class="button button--dark header__button--left">Book a table</a>
+			 	<a href="#menu" class="button button--light header__button--right">See the menu</a>
+			 </div>
+		</div>
 
 	</div>
 </header>
@@ -277,27 +280,27 @@
 			<h2 class="title title--highlighted title__reservation">Reservations</h2>
 			<img class="media separator" src="img/module/module__separator--highlighted.png" alt="">
 			<p class="medium description description--dark">
-				If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers coming back for more. Perfect materials and freshly baked food. 
+				If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers coming back for more. Perfect materials and freshly baked food.
 			</p>
-			<div class="form__fields field__name">
+			<div class="form__fields">
 				<label class="form__label" for="guest-name">Name</label>
-				<input class="form__field" id="guest-name" type="text" placeholder="your name*">
+				<input class="form__field field__name" id="guest-name" type="text" placeholder="your name*">
 			</div>
-			<div class="form__fields field__email">
+			<div class="form__fields">
 				<label class="form__label" for="email">Email</label>
-				<input class="form__field"  id="email" type="email" placeholder="your email*">
+				<input class="form__field field__email"  id="email" type="email" placeholder="your email*">
 			</div>
-			<div class="form__fields field__date">
+			<div class="form__fields">
 				<label class="form__label" for="date">Date</label>
-				<input class="form__field" id="date" type="date">
+				<input class="form__field field__date" id="date" type="date">
 			</div>
-			<div class="form__fields field__party-number">
+			<div class="form__fields">
 				<label class="form__label" for="party-number">Party Number</label>
-				<input class="form__field" id="party-number" type="number" placeholder="party number">
-			</div>			
+				<input class="form__field field__party-number" id="party-number" type="number" placeholder="party number">
+			</div>
 			<div class="submit__wrapper">
 				<input class="button button--highlighted form__submit" type="submit" value="Book Now!">
-			</div>		
+			</div>
 		</form>
 	</section>
 </div>
